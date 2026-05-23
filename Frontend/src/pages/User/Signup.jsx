@@ -29,13 +29,13 @@ export default function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!data.name || !data.userName || !data.email || !data.phone || !data.password) {
-      return toast.warning("All fields are required ⚠️");
-    }
+    // if (!data.name || !data.userName || !data.email || !data.phone || !data.password) {
+    //   return toast.warning("All fields are required ⚠️");
+    // }
 
-    if (data.password !== data.cpassword) {
-      return toast.warning("Password do not Match");
-    }
+    // if (data.password !== data.cpassword) {
+    //   return toast.warning("Password do not Match");
+    // }
 
     try {
 
@@ -84,8 +84,9 @@ export default function Signup() {
 
   return (
     <div className="flex items-center justify-center mt-20 relative overflow-hidden">
-      <div className="relative w-full max-w-xl p-5 mx-4 backdrop-blur-xl border border-blue-600 rounded-3xl shadow-2xl">
+      <ToastContainer position="top-right" autoClose={3000} />
 
+      <div className="relative w-full max-w-xl p-5 mx-4 backdrop-blur-xl border border-blue-600 rounded-3xl shadow-2xl">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-extrabold tracking-tight">
             <span className="text-blue-400">Sign Up</span>
