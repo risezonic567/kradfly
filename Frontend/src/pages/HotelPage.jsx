@@ -221,7 +221,7 @@ export default function HotelPage() {
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
 
-              <Link to="tel:+1888-315-3380">
+              <Link to="tel:+1-888-716-0404">
 
                 <motion.div
                   whileHover={{

@@ -64,7 +64,6 @@ Travel inherently involves risks—including delays, cancellations, loss of lugg
     For any questions or concerns regarding this disclaimer, please contact us at <strong>info@7uptravel.com</strong> or call <strong>+1-888-716-0404</strong>. Thank you for choosing 7UPTRAVEL LLC for your travel needs.
 </p>
 
-
     </div>
     </>
   )

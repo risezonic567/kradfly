@@ -60,7 +60,7 @@ export default function Navbar() {
           <li><Link to="/car-rental" className={navClass("/car-rental")}><Car size={18} /> Car Rental</Link></li>
           <li><Link to="/hotel" className={navClass("/hotel")}><Hotel size={18} /> Hotel</Link></li>
           <li><Link to="/cruise" className={navClass("/cruise")}><Ship size={18} /> Cruise</Link></li>
-          <li> <Link to="tel:+1888-315-3380" className="flex items-center gap-2 text-blue-600  font-semibold">
+          <li> <Link to="tel:+1-888-716-0404" className="flex items-center gap-2 text-blue-600  font-semibold">
             <Phone size={18} /> +1-888-716-0404
           </Link></li>
             {isLoggedIn ? (
@@ -111,7 +111,7 @@ export default function Navbar() {
             <li><Link onClick={() => setOpen(false)} to="/car-rental" className={navClass("/car-rental")}><Car size={18} /> Car Rental</Link></li>
             <li><Link onClick={() => setOpen(false)} to="/hotel" className={navClass("/hotel")}><Hotel size={18} /> Hotel</Link></li>
             <li><Link onClick={() => setOpen(false)} to="/cruise" className={navClass("/cruise")}><Ship size={18} /> Cruise</Link></li>
-            <li><Link onClick={() => setOpen(false)} to="tel:+18883153380" className="flex items-center gap-2 text-green-600"><Phone size={18} /> Call Now</Link></li>
+            <li><Link onClick={() => setOpen(false)} to="tel:+1-888-716-0404" className="flex items-center gap-2 text-green-600"><Phone size={18} /> Call Now</Link></li>
            
            
             {isLoggedIn ? (
