@@ -326,7 +326,7 @@ export default function ContactPage() {
             </p>
             <div className="flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-full font-semibold">
               <Phone size={14} />
-              <Link to="tel:+1-888-315-3380">+1-888-315-3380</Link>
+              <Link to="tel:+1-888-716-0404">+1-888-716-0404</Link>
             </div>
           </motion.div>
 

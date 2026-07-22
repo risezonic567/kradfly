@@ -17,7 +17,7 @@ export default function Footer() {
             <p className="text-sm mb-6">Affordable luxury, one booking away.</p>
             <div className="space-y-3 text-sm text-gray-300">
               <div className="flex items-center gap-3">
-                <Phone size={16} /> <Link to="tel:+1-888-315-3380" className="hover:text-blue-500 cursor-pointer transition">+1-888-315-3380</Link>
+                <Phone size={16} /> <Link to="tel:+1-888-716-0404" className="hover:text-blue-500 cursor-pointer transition">+1-888-716-0404</Link>
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={16} /> <Link to="mailto:info@7uptravel.com" className="hover:text-blue-500 cursor-pointer transition">info@7uptravel.com</Link>

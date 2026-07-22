@@ -61,7 +61,7 @@ Travel inherently involves risks—including delays, cancellations, loss of lugg
         For details on how we collect, use, and protect your personal information, please refer to our <Link to="/privacy-policy" className='text-blue-600'>Privacy Policy</Link>. By using our services, you agree to the handling of your data in accordance with this policy.
     </p>
 <p className='text-gray-500'>
-    For any questions or concerns regarding this disclaimer, please contact us at <strong>info@7uptravel.com</strong> or call <strong>+1-888-315-3380</strong>. Thank you for choosing 7UPTRAVEL LLC for your travel needs.
+    For any questions or concerns regarding this disclaimer, please contact us at <strong>info@7uptravel.com</strong> or call <strong>+1-888-716-0404</strong>. Thank you for choosing 7UPTRAVEL LLC for your travel needs.
 </p>
 
 

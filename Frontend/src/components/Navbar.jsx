@@ -61,7 +61,7 @@ export default function Navbar() {
           <li><Link to="/hotel" className={navClass("/hotel")}><Hotel size={18} /> Hotel</Link></li>
           <li><Link to="/cruise" className={navClass("/cruise")}><Ship size={18} /> Cruise</Link></li>
           <li> <Link to="tel:+1888-315-3380" className="flex items-center gap-2 text-blue-600  font-semibold">
-            <Phone size={18} /> +1-888-315-3380
+            <Phone size={18} /> +1-888-716-0404
           </Link></li>
             {isLoggedIn ? (
               <li className="flex items-center gap-2">

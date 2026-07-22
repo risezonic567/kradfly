@@ -68,7 +68,7 @@ export default function CruisePage() {
         </p>
 
         <div className="flex flex-wrap gap-4 mt-8 justify-center md:justify-start">
-          <Link to="tel:+1-888-315-3380">
+          <Link to="tel:+1-888-716-0404">
           <motion.button
             whileHover={{
               scale: 1.05,
