@@ -9,7 +9,7 @@ export default function PaymentSuccess() {
   const bookingId = params.get("bookingId")
 
   if (bookingId) {
-    fetch("https://www.7upflight-ticket.com/api/payment/payment-success", {
+    fetch("https://www.7uptravel.com/api/payment/payment-success", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

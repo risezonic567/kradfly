@@ -147,7 +147,7 @@ const handlePayment = async () => {
     // =========================
 
     const bookingRes = await fetch(
-      "https://www.7upflight-ticket.com/api/checkout/booking",
+      "https://www.7uptravel.com/api/checkout/booking",
       {
         method: "POST",
 
@@ -196,7 +196,7 @@ const handlePayment = async () => {
     }
 
     const paymentRes = await fetch(
-      "https://www.7upflight-ticket.com/api/payment/initiate",
+      "https://www.7uptravel.com/api/payment/initiate",
       {
         method: "POST",
 

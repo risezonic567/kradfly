@@ -15,8 +15,8 @@ const app = express()
 app.use(cors({
     origin:[
         "http://localhost:5173",
-        "https://www.7upflight-ticket.com",
-        "https://7upflight-ticket.com"
+        "https://www.7uptravel.com",
+        "https://7uptravel.com"
     ],
     methods:["GET","POST","PUT","DELETE"],
     credentials:true

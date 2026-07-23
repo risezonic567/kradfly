@@ -23,7 +23,7 @@ export default function ContactPage() {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://www.7upflight-ticket.com/api/contactus/send", {
+      const response = await fetch("https://www.7uptravel.com/api/contactus/send", {
         method:"POST",
         headers:{
           "Content-Type":"application/json"

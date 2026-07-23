@@ -43,7 +43,7 @@ export default function ForgetPassword() {
       setError("")
       setSuccess("")
 
-      const response = await fetch("https://www.7upflight-ticket.com/api/user/forgetpassword1", {
+      const response = await fetch("https://www.7uptravel.com/api/user/forgetpassword1", {
         method: "POST",
         headers: {
           "Content-type": "application/json"
@@ -79,7 +79,7 @@ export default function ForgetPassword() {
       setError("")
       setSuccess("")
 
-      const response = await fetch("https://www.7upflight-ticket.com/api/user/forgetpassword2", {
+      const response = await fetch("https://www.7uptravel.com/api/user/forgetpassword2", {
         method: "POST",
         headers: {
           "Content-type": "application/json"
@@ -115,7 +115,7 @@ export default function ForgetPassword() {
       setError("")
       setSuccess("")
 
-      const response = await fetch("https://www.7upflight-ticket.com/api/user/forgetpassword3", {
+      const response = await fetch("https://www.7uptravel.com/api/user/forgetpassword3", {
         method: "POST",
         headers: {
           "Content-type": "application/json"

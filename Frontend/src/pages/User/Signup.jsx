@@ -44,7 +44,7 @@ export default function Signup() {
 
       const { cpassword, ...finalData } = data;
 
-      const response = await fetch("https://www.7upflight-ticket.com/api/user/sign-up", {
+      const response = await fetch("https://www.7uptravel.com/api/user/sign-up", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
