@@ -183,7 +183,7 @@ export default function FlightPage() {
               animate={{ opacity: 1, y: 0 }}
               className="text-4xl md:text-6xl font-black text-white tracking-tight drop-shadow-lg"
             >
-              Find an <span className="text-[#52a3c3]">unpublished</span> deal
+              Find an <span className="text-[#52a3c3]">unpublished</span> 
             </motion.h1>
             <p className="text-white/95 mt-4 text-lg hidden md:block">Exclusive fares you won't find anywhere else.</p>
           </div>
