@@ -102,6 +102,23 @@ export default function Footer() {
           </div>
         </div>
 
+        <div className="border-t border-gray-800 pt-8 pb-6">
+          <h4 className="text-white text-xl font-bold mb-4">Disclaimer:</h4>
+          <div className="flex flex-wrap gap-x-4 gap-y-2 text-md">
+           <div>
+
+7UpTravel (www.7uptravel.com) is operated in the United States by 7UPTRAVEL LLC and KRAD Travel LLC, with business operations, customer support and related services in India provided by KRAD GLOBAL EXIM (INDIA) PRIVATE LIMITED.
+
+           </div>
+           
+            {/* {["Flights", "Hotels", "Cruise", "Car Rental", "Travel Deals", "California", "New York", "Los Angeles", "Chicago", "San Francisco", "Miami", "Sanjosh", "Las Vegas"].map((link) => (
+              <span key={link} className="hover:text-blue-500 cursor-pointer  border-gray-700 pr-4 last:border-none">
+                {link}
+              </span>
+            ))} */}
+          </div>
+        </div>
+
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center text-sm gap-4">
           <p>©2025 7UPTRAVEL LLC. All rights reserved.</p>
