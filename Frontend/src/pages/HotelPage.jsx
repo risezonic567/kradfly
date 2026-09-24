@@ -75,8 +75,7 @@ export default function HotelPage() {
               <FiMapPin className="text-purple-600 animate-pulse" />
               Luxury Hotel Booking
             </motion.div>
-
-            {/* Main Heading */}
+            
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
