@@ -79,7 +79,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="bg-slate-900/5 min-h-screen font-sans text-slate-800 pt-10 pb-24 relative overflow-hidden">
+    <div className="bg-slate-900/5 min-h-screen font-sans text-slate-800 pt-10 pb-24 md:mt-10 relative overflow-hidden">
       
       {/* Background Subtle Accent Lights */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-gradient-to-b from-blue-500/10 via-indigo-500/5 to-transparent blur-3xl pointer-events-none -z-10" />

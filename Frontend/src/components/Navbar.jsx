@@ -66,7 +66,7 @@ export default function Navbar() {
           <img
             src="/logo/logo1.png"
             alt="Krad Global Travel"
-            className="h-14 sm:h-16 md:h-20 lg:h-24 w-auto object-contain"
+            className="h-14 sm:h-16 md:h-18 lg:h-22 w-auto object-contain"
           />
         </Link>
 

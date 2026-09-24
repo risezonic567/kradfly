@@ -469,12 +469,12 @@ const FlightSearchPage = () => {
             </div>
 
             {/* Main Content Layout */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col lg:flex-row gap-6">
+            <div className="max-w-7xl mx-auto px-4 mt-10  sm:px-6 flex flex-col lg:flex-row gap-6">
 
                 {/* Desktop Sticky Sidebar */}
                 <aside className="w-full lg:w-72 xl:w-80 hidden lg:block shrink-0">
                     <div className="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 sticky top-24">
-                        <div className="flex items-center justify-between mb-6 pb-4 border-b border-slate-100">
+                        <div className="flex items-center justify-between  pb-4 border-b border-slate-100">
                             <h2 className="text-base font-bold text-slate-800 flex items-center gap-2">
                                 <Filter size={18} className="text-blue-600" /> Filters
                             </h2>
@@ -494,7 +494,7 @@ const FlightSearchPage = () => {
                         </div>
 
                         {/* Cabin Filter */}
-                        <div className="mb-6">
+                        <div className="mb-6 ">
                             <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Cabin</h3>
                             <select
                                 value={cabinFilter}
@@ -569,7 +569,7 @@ const FlightSearchPage = () => {
                         {/* Airlines Filter */}
                         <div>
                             <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2.5">Airlines</h3>
-                            <div className="max-h-60 overflow-y-auto space-y-2.5 pr-2">
+                            <div className="max-h-60 overflow-y-scroll space-y-2.5 pr-2">
                                 {airlines.map((airline, i) => (
                                     <label key={i} className="flex items-center gap-2.5 text-sm font-medium text-slate-700 hover:text-blue-600 cursor-pointer transition">
                                         <input

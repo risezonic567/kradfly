@@ -26,7 +26,7 @@ export default function CruisePage() {
           duration: 0.9,
           ease: "easeOut"
         }}
-        className="mt-16 md:mt-24 px-4 max-w-7xl mx-auto"
+        className="mt-22 md:mt-28 px-4 max-w-7xl mx-auto"
       >
         <motion.div
           animate={{

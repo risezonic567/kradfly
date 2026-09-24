@@ -6,7 +6,7 @@ import Testimonials from '../components/Testimonials';
 
 export default function AboutUsPage() {
   return (
-    <div className="bg-slate-50 font-sans text-slate-900 min-h-screen">
+    <div className="bg-slate-50 font-sans md:mt-20 text-slate-900 min-h-screen">
       
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[75vh] flex items-center justify-center overflow-hidden bg-slate-950">
@@ -19,7 +19,7 @@ export default function AboutUsPage() {
           transition={{ duration: 1 }}
         />
 
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-slate-950/40 to-slate-950/80" />
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-slate-950/40 to-slate-950/80" /> */}
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <motion.span

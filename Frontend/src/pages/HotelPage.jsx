@@ -49,7 +49,7 @@ export default function HotelPage() {
 
   return (
     <>
-      <div className="min-h-screen bg-slate-950/2 text-slate-800 overflow-hidden md:mt-0 mt-6 relative font-sans">
+      <div className="min-h-screen bg-slate-950/2 text-slate-800 overflow-hidden md:mt-10  mt-6 relative font-sans">
         
         {/* Ambient Decorative Background Glows */}
         <div className="absolute top-10 left-10 w-96 h-96 bg-purple-200/40 rounded-full blur-3xl pointer-events-none -z-10" />

@@ -168,10 +168,9 @@ export default function FlightPage() {
               src="/video/herobg.mp4"
               className="w-full h-full object-cover opacity-60"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-slate-950/70 via-slate-950/40 to-slate-900/90"></div>
+            {/* <div className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/10 to-slate-900/40"></div> */}
           </div>
 
-          {/* Hero Header */}
           <div className="relative z-10 text-center max-w-3xl mx-auto px-4 mt-8 md:mt-12">
             <motion.h1
               initial={{ opacity: 0, y: -15 }}
