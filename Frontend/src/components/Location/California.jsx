@@ -95,7 +95,7 @@ export default function California() {
                         <li><b>Anaheim Marriott:</b> Steps from the Anaheim Convention Center with large meeting rooms and tech-enabled guest rooms.</li>
                     </ul>
 
-                    <h2 className='text-lg sm:text-xl font-bold mt-5 mb-5'>🧳 Why Book with 7UPTRAVEL LLC?</h2>
+                    <h2 className='text-lg sm:text-xl font-bold mt-5 mb-5'>🧳 Why Book with KRAD GLOBAL TRAVEL LLC?</h2>
                     <ul className='text-gray-500 list-disc pl-5 sm:pl-10'>
                         <li>✅ Best Rate Guarantee – We’ll match any lower rate you find.</li>
                         <li>🚗Huge Selection – From budget to boutique to 5-star luxury.</li>
@@ -114,7 +114,7 @@ export default function California() {
 
                     <h2 className='text-lg sm:text-xl font-bold mt-5 mb-5'>🚀Ready to Explore California?</h2>
                     <p className='text-gray-500 text-sm sm:text-base leading-relaxed'>
-                        Whether you're dreaming of the Pacific Coast Highway, the thrills of Hollywood, or the serenity of Sequoia forests, California has it all — and <b>7UPTRAVEL LLC</b> is your ticket to explore it affordably and in style.
+                        Whether you're dreaming of the Pacific Coast Highway, the thrills of Hollywood, or the serenity of Sequoia forests, California has it all — and <b>KRAD GLOBAL TRAVEL LLC</b> is your ticket to explore it affordably and in style.
                     </p>
 
                     <p className='font-semibold text-gray-500 mt-5 mb-5 text-sm sm:text-base'>

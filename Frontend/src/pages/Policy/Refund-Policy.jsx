@@ -16,14 +16,14 @@ export default function RefundPolicy() {
 
 
                 <p className='text-gray-500 mt-5'>
-                    At 7UPTRAVEL LLC, we aim to handle refund requests in a fair, transparent, and timely manner. This Refund Policy explains how we process and issue refunds for hotel and car rental bookings made through our platform.
+                    At KRAD GLOBAL TRAVEL LLC, we aim to handle refund requests in a fair, transparent, and timely manner. This Refund Policy explains how we process and issue refunds for hotel and car rental bookings made through our platform.
                 </p>
 
                 <h2 className="text-xl md:text-xl font-bold mb-5 mt-8">General Policy</h2>
 
                 <ul className="list-disc pl-10  space-y-1 mb-4 text-sm sm:text-base text-gray-500">
                     <li>Refund eligibility is determined entirely by the terms and conditions of the service provider (e.g., hotel or car rental company).</li>
-                    <li>7uptravel acts as a facilitator and does not guarantee the approval of refund requests.</li>
+                    <li>Krad Global Travel acts as a facilitator and does not guarantee the approval of refund requests.</li>
                     <li>Users are responsible for reviewing the provider’s refund terms at the time of booking.</li>
                 </ul>
 
@@ -33,16 +33,16 @@ export default function RefundPolicy() {
                     <li>We will submit refund requests on your behalf to the appropriate provider.</li>
                     <li>Approval, refund amounts, and processing times are governed by the provider’s policies.</li>
                     <li>Refunds may take 60 to 90 days from the date of request, depending on the provider’s response time and banking procedures.</li>
-                    <li>7uptravel is not responsible for delays caused by the provider or financial institutions.</li>
+                    <li>Krad Global Travel is not responsible for delays caused by the provider or financial institutions.</li>
                 </ul>
 
                 
                 <h2 className="text-xl md:text-xl font-bold mb-5 mt-8">Fees</h2>
 
                 <ul className="list-disc pl-10  space-y-1 mb-4 text-sm sm:text-base text-gray-500">
-                    <li>7UPTRAVEL LLC may charge a post-booking service fee for handling refund-related communication and requests. This fee applies per booking.</li>
+                    <li>KRAD GLOBAL TRAVEL LLC may charge a post-booking service fee for handling refund-related communication and requests. This fee applies per booking.</li>
                     <li>This fee is only charged if the provider authorizes a refund or grants a waiver.</li>
-                    <li>If a refund is denied by the provider, any 7uptravel post-booking service fees already charged will be refunded—however, original booking fees are non-refundable.</li>
+                    <li>If a refund is denied by the provider, any Krad Global Travel post-booking service fees already charged will be refunded—however, original booking fees are non-refundable.</li>
                     
                 </ul>
 
@@ -58,7 +58,7 @@ export default function RefundPolicy() {
                   <h2 className="text-xl md:text-xl font-bold mb-5 mt-8">Policy Modifications</h2>
 
                 <ul className="list-disc pl-10  space-y-1 mb-4 text-sm sm:text-base text-gray-500">
-                    <li>7UPTRAVEL LLC reserves the right to update or modify this Refund Policy at any time without prior notice.</li>
+                    <li>KRAD GLOBAL TRAVEL LLC reserves the right to update or modify this Refund Policy at any time without prior notice.</li>
                     <li>Continued use of our platform after any changes constitutes your acceptance of the revised policy.</li>
                 </ul>
             </div>

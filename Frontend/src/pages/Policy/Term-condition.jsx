@@ -10,15 +10,15 @@ export default function TermsCondition() {
       </h1>
 
       <p className="text-sm mt-10 sm:text-base text-gray-400 font-semibold leading-relaxed mb-6">
-        Welcome to the 7UPTRAVEL LLC ("7UPTRAVEL LLC", "we", "our", "us") website (collectively, the "Site"). 
-        This website is governed and managed by 7UPTRAVEL LLC. based in New Jersey. By accessing or using the Site in any manner, 
+        Welcome to the KRAD GLOBAL TRAVEL LLC ("KRAD GLOBAL TRAVEL LLC", "we", "our", "us") website (collectively, the "Site"). 
+        This website is governed and managed by KRAD GLOBAL TRAVEL LLC. based in New Jersey. By accessing or using the Site in any manner, 
         you agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to all of these Terms, do not use the Site.
       </p>
 
       <h2 className="text-xl md:text-xl font-bold mt-6 mb-2">Services</h2>
 
     <ul className='list-disc text-gray-500 pl-5 sm:pl-6 py-5 space-y-2 text-sm sm:text-base'>
-        <li> 7UPTRAVEL LLC provides a platform for booking travel-related services, including but not limited to car rentals, hotel accommodations, vacation packages, and travel insurance. 
+        <li> KRAD GLOBAL TRAVEL LLC provides a platform for booking travel-related services, including but not limited to car rentals, hotel accommodations, vacation packages, and travel insurance. 
         We partner with various service providers to offer these services. </li>
         <li>  While we strive to provide accurate and up-to-date information, 
         we do not warrant that the information on our Site is free of errors or omissions.</li>
@@ -31,7 +31,7 @@ export default function TermsCondition() {
 
       <h3 className="text-lg md:text-xl font-semibold mt-4 mb-2">Car Rental Companies</h3>
       <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-2">
-        When booking a car rental through our Site, you are entering into an agreement with the car rental company, not with 7UPTRAVEL LLC. 
+        When booking a car rental through our Site, you are entering into an agreement with the car rental company, not with KRAD GLOBAL TRAVEL LLC. 
         Your rental is subject to the terms and conditions of the specific car rental company. These may include:
       </p>
       <ul className="list-disc pl-5 sm:pl-6 space-y-1 mb-4 text-sm sm:text-base text-gray-500">
@@ -48,7 +48,7 @@ export default function TermsCondition() {
 
       <h3 className="text-lg md:text-xl font-semibold mt-4 mb-2">Hotels</h3>
       <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-2">
-        When booking a hotel through our Site, you are entering into an agreement with the hotel, not with 7UPTRAVEL LLC. 
+        When booking a hotel through our Site, you are entering into an agreement with the hotel, not with KRAD GLOBAL TRAVEL LLC. 
         Your stay is subject to the terms and conditions of the specific hotel. These may include:
       </p>
       <ul className="list-disc pl-5 sm:pl-6 space-y-1 mb-4 text-sm sm:text-base text-gray-500">
@@ -71,7 +71,7 @@ export default function TermsCondition() {
         <li>In some cases, you may be required to pay the service provider directly at the time of service.</li>
         <li>Currency conversion rates are based on various publicly available sources and should be used as guidelines only.</li>
         <li>Some bookings may require a deposit or prepayment. The terms of such payments will be clearly communicated during the booking process.</li>
-        <li>7UPTRAVEL LLC reserves the right to cancel bookings in cases of suspected fraud, abuse of our systems, or violations of these Terms.</li>
+        <li>KRAD GLOBAL TRAVEL LLC reserves the right to cancel bookings in cases of suspected fraud, abuse of our systems, or violations of these Terms.</li>
       </ul>
         <p className='mt-5 text-gray-500 font-semibold'>The descriptor billing will be Car Rental 8664033917.</p>
 
@@ -79,8 +79,8 @@ export default function TermsCondition() {
       <h2 className="text-xl md:text-xl font-bold mt-6 mb-2">Cancellations, Modifications, and Refunds</h2>
       <ul className="list-disc pl-5 sm:pl-6 space-y-1 mb-4 text-sm sm:text-base text-gray-500">
         <li>All refund requests must follow the policies set by the individual service providers.</li>
-        <li>Refunds are only issued once 7UPTRAVEL LLC receives confirmation from the provider that a refund is warranted.</li>
-        <li>Approved refunds will be processed by 7UPTRAVEL within 7 business days of provider confirmation.</li>
+        <li>Refunds are only issued once KRAD GLOBAL TRAVEL LLC receives confirmation from the provider that a refund is warranted.</li>
+        <li>Approved refunds will be processed by KRAD GLOBAL TRAVEL within 7 business days of provider confirmation.</li>
         <li>Refunds will be returned to the original payment method, unless otherwise agreed upon.</li>
       </ul>
 
@@ -105,15 +105,15 @@ export default function TermsCondition() {
 
       <h2 className="text-xl md:text-xl font-bold mt-6 mb-2">Limitation of Liability</h2>
       <ul className="list-disc pl-5 sm:pl-6 space-y-1 mb-4 text-sm sm:text-base text-gray-500">
-        <li>7UPTRAVEL LLC acts solely as an intermediary between you and the service providers. We are not responsible for the actions, omissions, or policies of these third-party providers.</li>
-        <li>To the fullest extent permitted by law, 7UPTRAVEL LLC shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising out of or in connection with your use of the Site or any services booked through the Site.</li>
+        <li>KRAD GLOBAL TRAVEL LLC acts solely as an intermediary between you and the service providers. We are not responsible for the actions, omissions, or policies of these third-party providers.</li>
+        <li>To the fullest extent permitted by law, KRAD GLOBAL TRAVEL LLC shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising out of or in connection with your use of the Site or any services booked through the Site.</li>
         <li>We do not guarantee the accuracy, completeness, or timeliness of information on our Site.</li>
-      <li>7UPTRAVEL LLC is not liable for any losses or damages arising from your failure to comply with travel requirements, including but not limited to valid passports, visas, and health requirements.</li>
+      <li>KRAD GLOBAL TRAVEL LLC is not liable for any losses or damages arising from your failure to comply with travel requirements, including but not limited to valid passports, visas, and health requirements.</li>
       </ul>
 
     <h2 className="text-xl md:text-xl font-bold mt-6 mb-2">Intellectual Property</h2>
       <ul className="list-disc pl-5 sm:pl-6 space-y-1 mb-4 text-sm sm:text-base text-gray-500">
-        <li>All content on the Site, including text, graphics, logos, and software, is the property of 7UPTRAVEL LLC or its content suppliers and is protected by United States and international copyright laws.</li>
+        <li>All content on the Site, including text, graphics, logos, and software, is the property of KRAD GLOBAL TRAVEL LLC or its content suppliers and is protected by United States and international copyright laws.</li>
         <li>You may not use, reproduce, distribute, or create derivative works from any content from the Site without our express written consent.</li>
         <li>Any feedback, comments, or suggestions you may provide regarding the Site is entirely voluntary and we will be free to use such feedback, comments or suggestions without any obligation to you.</li>
       </ul>
@@ -122,27 +122,27 @@ export default function TermsCondition() {
 By using the Site, you consent to the collection, use, and sharing of your information as described in the Privacy Policy.</p>
     
     <h2 className="text-xl md:text-xl font-bold mt-6 mb-2">SMS Terms of Service</h2>
-    <p className='mt-5 text-gray-500'>By providing your phone number to 7uptravel LLC, you agree to receive SMS messages regarding booking updates and travel support.</p>
+    <p className='mt-5 text-gray-500'>By providing your phone number to KRAD GLOBAL TRAVEL LLC, you agree to receive SMS messages regarding booking updates and travel support.</p>
     <p className='mt-5 text-gray-500'>You may reply STOP to opt out of messaging at any time.</p>
     <p className='mt-5 text-gray-500'>Reply HELP for customer support.</p>
     <p className='mt-5 text-gray-500'>Message and data rates may apply. Message frequency may vary.</p>
 
     <h2 className="text-xl md:text-xl font-bold mt-6 mb-2">Indemnification</h2>
-    <p className='text-gray-500'>You agree to indemnify, defend, and hold harmless 7UPTRAVEL LLC, its officers, directors, employees, agents, licensors, and suppliers from and against all losses, expenses, damages and costs, including messageable attorneys' fees, resulting from any violation of these Terms or any activity related to your account.</p>
+    <p className='text-gray-500'>You agree to indemnify, defend, and hold harmless KRAD GLOBAL TRAVEL LLC, its officers, directors, employees, agents, licensors, and suppliers from and against all losses, expenses, damages and costs, including messageable attorneys' fees, resulting from any violation of these Terms or any activity related to your account.</p>
     <h2 className="text-xl md:text-xl font-bold mt-6 mb-2">Third-Party Links</h2>
-    <p className='text-gray-500'>The Site may contain links to third-party websites. These links are provided solely as a convenience to you and do not imply an endorsement or relationship between 7UPTRAVEL LLC and the third-party site. We do not exercise control over third-party websites and are not responsible for their content or privacy policies.</p>
+    <p className='text-gray-500'>The Site may contain links to third-party websites. These links are provided solely as a convenience to you and do not imply an endorsement or relationship between KRAD GLOBAL TRAVEL LLC and the third-party site. We do not exercise control over third-party websites and are not responsible for their content or privacy policies.</p>
     
     <h2 className="text-xl md:text-xl font-bold mt-6 mb-2">Force Majeure</h2>
-    <p className='text-gray-500'>7UPTRAVEL LLC is not liable for any failure to perform due to unforeseen circumstances or causes beyond our messageable control, including but not limited to acts of God, war, terrorism, riots, embargoes, acts of civil or military authorities, fire, floods, accidents, pandemics, strikes, or shortages of transportation facilities, fuel, energy, labor, or materials.</p>
+    <p className='text-gray-500'>KRAD GLOBAL TRAVEL LLC is not liable for any failure to perform due to unforeseen circumstances or causes beyond our messageable control, including but not limited to acts of God, war, terrorism, riots, embargoes, acts of civil or military authorities, fire, floods, accidents, pandemics, strikes, or shortages of transportation facilities, fuel, energy, labor, or materials.</p>
     <h2 className="text-xl md:text-xl font-bold mt-6 mb-2">Dispute Resolution</h2>
     <ul className="list-disc pl-5 sm:pl-6 space-y-1 mb-4 text-sm sm:text-base text-gray-500">
         <li>Any dispute arising from these Terms or your use of the Site shall first be attempted to be resolved through informal negotiations.</li>
         <li>If a dispute cannot be resolved informally, you agree that any claim or dispute will be resolved through binding arbitration, conducted on an individual basis, and not on a class-wide basis.</li>
-        <li>The arbitration will be conducted in New Jersey, unless you and 7UPTRAVEL LLC agree otherwise.</li>
+        <li>The arbitration will be conducted in New Jersey, unless you and KRAD GLOBAL TRAVEL LLC agree otherwise.</li>
       </ul>
 
       <h2 className="text-xl md:text-xl font-bold mt-6 mb-2">Modifications to Terms</h2>
-      <p className='text-gray-500'>7UPTRAVEL LLC reserves the right to modify these Terms at any time without prior notice. Your continued use of the Site after any changes indicates your acceptance of the modified Terms.</p>
+      <p className='text-gray-500'>KRAD GLOBAL TRAVEL LLC reserves the right to modify these Terms at any time without prior notice. Your continued use of the Site after any changes indicates your acceptance of the modified Terms.</p>
         <h2 className="text-xl md:text-xl font-bold mt-6 mb-2">Severability</h2>
         <p className='text-gray-500'>If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary so that the Terms will otherwise remain in full force and effect and enforceable.</p>
 
@@ -150,29 +150,29 @@ By using the Site, you consent to the collection, use, and sharing of your infor
         <p className='text-gray-500'>These Terms shall be governed by and construed in accordance with the laws of the State of New Jersey, without regard to its conflict of law provisions.</p>
 
       <h2 className="text-xl md:text-xl font-bold mt-6 mb-2">Entire Agreement</h2>
-        <p className='text-gray-500'>These Terms constitute the entire agreement between you and 7UPTRAVEL LLC regarding the use of the Site, superseding any prior agreements between you and 7UPTRAVEL LLC relating to your use of the Site.</p>
+        <p className='text-gray-500'>These Terms constitute the entire agreement between you and KRAD GLOBAL TRAVEL LLC regarding the use of the Site, superseding any prior agreements between you and KRAD GLOBAL TRAVEL LLC relating to your use of the Site.</p>
 
  <h2 className="text-xl md:text-xl font-bold mt-6 mb-2">Descriptor</h2>
         <p className='text-gray-500'>
 
-            Please note that transactions processed through our platform may appear on your billing statement as “7upTravel Booking NJ - 8664033917.” This billing descriptor applies to all services booked through our platform, including car rentals, hotels, vacation packages, and travel insurance.
+            Please note that transactions processed through our platform may appear on your billing statement as “Krad Global Travel Booking NJ - 8664033917.” This billing descriptor applies to all services booked through our platform, including car rentals, hotels, vacation packages, and travel insurance.
         </p>
 
 <h2 className="text-xl md:text-xl font-bold mt-6 mb-2">Dispute Resolution and Chargebacks</h2>
         <p className='text-gray-500'>
 
-           7uptravel will assist users in communicating with third-party service providers in the event of a service dispute. While we are not the merchant of record for provider services, we will provide documentation and support to help resolve any disputes, including those raised via credit card chargebacks or through payment processors like PayPal or Stripe. However, we do not guarantee specific outcomes for third-party issues.
+           Krad Global Travel will assist users in communicating with third-party service providers in the event of a service dispute. While we are not the merchant of record for provider services, we will provide documentation and support to help resolve any disputes, including those raised via credit card chargebacks or through payment processors like PayPal or Stripe. However, we do not guarantee specific outcomes for third-party issues.
         </p>
 
 <h2 className="text-xl md:text-xl font-bold mt-6 mb-2">Customer Support and Inguires</h2>
         <p className='text-gray-500'>
-    For any payment-related inquiries, including questions about billing descriptors, chargeback support, or refund status, please contact us at support@7uptravel.com or call 866-403-3917. Our business address is 7uptravel, 17662 Irvine Blvd, Suite 1, Tustin, CA 92780, United States. We aim to respond to all inquiries within 2 business days.
+    For any payment-related inquiries, including questions about billing descriptors, chargeback support, or refund status, please contact us at support@7uptravel.com or call 866-403-3917. Our business address is Krad Global Travel, 17662 Irvine Blvd Suite 9, Tustin, CA 92780, United States. We aim to respond to all inquiries within 2 business days.
           </p>
 
 <h2 className="text-xl md:text-xl font-bold mt-6 mb-2">Acknowledgment of Buyer Protection Rights</h2>
-<p className='text-gray-500'>Users may have access to payment platform protections depending on the method used (e.g., PayPal Purchase Protection or Stripe Dispute Resolution). 7uptravel does not restrict users’ rights to file claims under such protection policies but encourages users to contact us first for a faster resolution.</p>
+<p className='text-gray-500'>Users may have access to payment platform protections depending on the method used (e.g., PayPal Purchase Protection or Stripe Dispute Resolution). Krad Global Travel does not restrict users’ rights to file claims under such protection policies but encourages users to contact us first for a faster resolution.</p>
 <h2 className="text-xl md:text-xl font-bold mt-6 mb-2">Business-to-Business (B2B) Payment Terms (For Trevipay Eligibility)</h2>
-<p className='text-gray-500'>For qualified business clients, 7uptravel may offer invoiced billing with net terms, subject to credit approval and separate agreement. Standard terms are Net 30, and late payments may incur a 1.5% monthly finance charge. Businesses interested in B2B billing should contact info@7uptravel.com to apply.</p>
+<p className='text-gray-500'>For qualified business clients, Krad Global Travel may offer invoiced billing with net terms, subject to credit approval and separate agreement. Standard terms are Net 30, and late payments may incur a 1.5% monthly finance charge. Businesses interested in B2B billing should contact info@7uptravel.com to apply.</p>
 
 
 

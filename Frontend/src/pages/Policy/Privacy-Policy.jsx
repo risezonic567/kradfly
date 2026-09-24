@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
             </p>
 
             <p className="mt-6 font-semibold text-gray-500 text-sm sm:text-base leading-relaxed">
-                At 7UPTRAVEL LLC and its affiliate companies (collectively, hereinafter, “7UPTRAVEL LLC,” "we," "us," or "our") honor your trust.
+                At KRAD GLOBAL TRAVEL LLC and its affiliate companies (collectively, hereinafter, “KRAD GLOBAL TRAVEL LLC,” "we," "us," or "our") honor your trust.
                 With an attempt to maintain transparency regarding what information we collect from you to render you Services, and how we collect, use,
                 and disclose the information, we present you this Privacy Policy. By submitting your Personal Information online or over the phone
                 to our employees or affiliates, you agree to abide by the terms and conditions of this Privacy Policy.
@@ -94,7 +94,7 @@ export default function PrivacyPolicy() {
 
             <ul className="list-disc pl-5 sm:pl-6 space-y-2 py-4 text-gray-500 text-sm sm:text-base">
                 <li><strong>Note:</strong> Using our Site or Services, you agree and understand that these entities, except our corporate affiliates worldwide, are not under our control and, hence, we don’t control their privacy practices. We request you to review their privacy policies before transferring your Personal Information to such entities.</li>
-                <li><strong>Our corporate affiliates:</strong>We may share your Personal Information with our corporate affiliates worldwide for the purposes described in this Privacy Policy. 7UPTRAVEL LLC holds the accountability for managing the Personal Information thereof.<br />
+                <li><strong>Our corporate affiliates:</strong>We may share your Personal Information with our corporate affiliates worldwide for the purposes described in this Privacy Policy. KRAD GLOBAL TRAVEL LLC holds the accountability for managing the Personal Information thereof.<br />
                     No mobile information will be shared with third parties/affiliates for marketing or promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.
                 </li>
                 <li><strong>Third party travel-related suppliers:</strong>The information may be shared with third-party travel-related suppliers such as car rentals so that they may serve you with the products and services that you book or purchase using the Services.</li>
@@ -181,7 +181,7 @@ this information will not be shared with any third parties.
             </p>
 
             <h2 className="text-xl md:text-xl font-bold mb-5 mt-8">Third Party Services</h2>
-            <p className="text-gray-500">7UPTRAVEL LLC may contain links to third-party websites or social media channels including Facebook, Twitter, etc. You understand we are in no way endorsing such sites. Such sites have their own privacy practices and we hold no control over them. In the course of processing payments for bookings, your information may be securely transmitted to third-party payment processors such as Stripe or PayPal. These providers handle your data according to their own privacy policies, which you can view at Stripe and PayPal.</p>
+            <p className="text-gray-500">KRAD GLOBAL TRAVEL LLC may contain links to third-party websites or social media channels including Facebook, Twitter, etc. You understand we are in no way endorsing such sites. Such sites have their own privacy practices and we hold no control over them. In the course of processing payments for bookings, your information may be securely transmitted to third-party payment processors such as Stripe or PayPal. These providers handle your data according to their own privacy policies, which you can view at Stripe and PayPal.</p>
 
             <h2 className="text-xl md:text-xl font-bold mb-5 mt-8">Security – How we protect your information</h2>
             <p className="text-gray-500">
@@ -239,7 +239,7 @@ this information will not be shared with any third parties.
 
             <h2 className="text-xl md:text-xl font-bold mb-5 mt-8">Updates to This Privacy Policy</h2>
             <p className="text-gray-500">
-                7UPTRAVEL LLC reserves the discrete right to change or update this Privacy Policy without sending any prior notification. Your use of the Services following these changes means that you accept the revised Privacy Policy. The "Last Updated" tab at the top of this page mentions the date when the policy was lastly revised. Any changes will become effective when we post the revised Privacy Policy on the Services.
+                KRAD GLOBAL TRAVEL LLC reserves the discrete right to change or update this Privacy Policy without sending any prior notification. Your use of the Services following these changes means that you accept the revised Privacy Policy. The "Last Updated" tab at the top of this page mentions the date when the policy was lastly revised. Any changes will become effective when we post the revised Privacy Policy on the Services.
             </p>
 
 

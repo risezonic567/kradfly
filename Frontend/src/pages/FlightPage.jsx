@@ -1,8 +1,9 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from "framer-motion";
 import HowItWorks from './HowItWorks';
 import { MdClose } from "react-icons/md";
-import { Calendar, PlaneLanding, PlaneTakeoff, Users, X } from 'lucide-react';
+import { Calendar, PlaneLanding, PlaneTakeoff, Users, X, Search, ChevronDown, Plus, Minus } from 'lucide-react';
 import FlightDestination from './Destination/FlightDestination';
 import ExploreNearby from './ExploreNearby';
 import FAQPage from './FaqPage';
@@ -11,31 +12,31 @@ import Testimonials from '../components/Testimonials';
 import OurServices from '../components/OurServices';
 
 export default function FlightPage() {
-  const [roundedEnable, setRoundedEnable] = useState(false)
-  const [returnDate, setReturnDate] = useState("")
+  const [roundedEnable, setRoundedEnable] = useState(false);
+  const [returnDate, setReturnDate] = useState("");
 
-  const [originQuery, setOriginQuery] = useState("")
-  const [destinationQuery, setDestinationQuery] = useState("")
+  const [originQuery, setOriginQuery] = useState("");
+  const [destinationQuery, setDestinationQuery] = useState("");
 
-  const [originAirports, setOriginAirports] = useState([])
-  const [destinationAirports, setDestinationAirports] = useState([])
+  const [originAirports, setOriginAirports] = useState([]);
+  const [destinationAirports, setDestinationAirports] = useState([]);
 
-  const [showOriginDropdown, setShowOriginDropdown] = useState(false)
-  const [showDestinationDropdown, setShowDestinationDropdown] = useState(false)
+  const [showOriginDropdown, setShowOriginDropdown] = useState(false);
+  const [showDestinationDropdown, setShowDestinationDropdown] = useState(false);
 
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
-  const originRef = useRef(null)
-  const destinationRef = useRef(null)
+  const originRef = useRef(null);
+  const destinationRef = useRef(null);
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     origin: "",
     destination: "",
     departuredDate: "",
     returnDate: ""
-  })
+  });
 
   const [passengers, setPassengers] = useState({
     adults: 1,
@@ -44,7 +45,7 @@ export default function FlightPage() {
   });
 
   const [open, setOpen] = useState(false);
-  const [cabin, setCabin] = useState("Economy")
+  const [cabin, setCabin] = useState("Economy");
 
   const cabinMap = {
     "Economy": "economy",
@@ -59,22 +60,22 @@ export default function FlightPage() {
     }));
   };
 
-  const totalText = `${passengers.adults} Adult${passengers.adults > 1 ? "s" : ""}${passengers.children ? `, ${passengers.children} Child` : ""
-    }${passengers.infants ? `, ${passengers.infants} Infant` : ""}`;
+  const totalText = `${passengers.adults} Adult${passengers.adults > 1 ? "s" : ""}${
+    passengers.children ? `, ${passengers.children} Child` : ""
+  }${passengers.infants ? `, ${passengers.infants} Infant` : ""}`;
 
   async function handleSearch(e) {
+    e.preventDefault();
 
-    e.preventDefault()
-
-    const formData = new FormData(e.target)
+    const formData = new FormData(e.target);
 
     const origin = formData.get("origin");
     const destination = formData.get("destination");
-    const date = formData.get("departuredDate")
+    const date = formData.get("departuredDate");
 
     if (!origin || !destination || !date) {
-      alert("Please fill all Required field")
-      return
+      alert("Please fill all Required field");
+      return;
     }
 
     navigate("/flight-list", {
@@ -88,343 +89,379 @@ export default function FlightPage() {
         infants: passengers.infants,
         cabin: cabinMap[cabin]
       }
-    })
-
+    });
   }
 
   const searchAirports = async (value, type) => {
-
     if (type === "origin") {
-      setOriginQuery(value)
+      setOriginQuery(value);
     } else {
-      setDestinationQuery(value)
+      setDestinationQuery(value);
     }
 
     if (value.length < 2) {
       if (type === "origin") {
-        setOriginAirports([])
-        setShowOriginDropdown(false)
+        setOriginAirports([]);
+        setShowOriginDropdown(false);
       } else {
-        setDestinationAirports([])
-        setShowDestinationDropdown(false)
+        setDestinationAirports([]);
+        setShowDestinationDropdown(false);
       }
-      return
+      return;
     }
 
     try {
-
-      setLoading(true)
+      setLoading(true);
 
       const response = await fetch(
         `https://www.7uptravel.com/api/flight/airports?query=${value}`
-      )
+      );
 
-      const result = await response.json()
+      const result = await response.json();
 
-      const airportList = result?.data?.data || []
+      const airportList = result?.data?.data || [];
 
       if (type === "origin") {
-        setOriginAirports(airportList)
-        setShowOriginDropdown(true)
+        setOriginAirports(airportList);
+        setShowOriginDropdown(true);
       } else {
-        setDestinationAirports(airportList)
-        setShowDestinationDropdown(true)
+        setDestinationAirports(airportList);
+        setShowDestinationDropdown(true);
       }
-
     } catch (error) {
-
-      console.log(error)
-
+      console.log(error);
     } finally {
-
-      setLoading(false)
-
+      setLoading(false);
     }
-  }
+  };
 
-  useEffect(()=>{
-    function handleClickOutSide (event){
-      if(originRef.current && !originRef.current.contains(event.target)){
-        setShowOriginDropdown(false)
+  useEffect(() => {
+    function handleClickOutSide(event) {
+      if (originRef.current && !originRef.current.contains(event.target)) {
+        setShowOriginDropdown(false);
       }
 
-      if(destinationRef.current && !destinationRef.current.contains(event.target)){
-        setShowDestinationDropdown(false)
+      if (destinationRef.current && !destinationRef.current.contains(event.target)) {
+        setShowDestinationDropdown(false);
       }
     }
 
-    document.addEventListener("mousedown",handleClickOutSide)
+    document.addEventListener("mousedown", handleClickOutSide);
 
-    return ()=>{
-      document.removeEventListener("mousedown",handleClickOutSide)
-    }
-  },[])
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutSide);
+    };
+  }, []);
 
   return (
     <div className="font-sans">
-      <section className="h-full">
-        <div className="w-full md:h-[100vh] h-[100vh] rounded-[40px] md:rounded-[60px] pt-24 pb-44 relative overflow-visible shadow-2xl">
-
+      <section className="relative font-sans">
+        <div className="w-full pt-20 pb-36 md:pt-28 md:pb-44 relative overflow-hidden bg-slate-900">
+          
+          {/* Background Video & Overlay */}
           <div className="absolute inset-0 z-0">
             <video
               autoPlay
               loop
               playsInline
               muted
-              src="/video/Flight Page.mp4"
-              className="absolute w-full h-full top-0 left-0 object-cover"
+              src="/video/herobg.mp4"
+              className="w-full h-full object-cover opacity-60"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/40"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-slate-950/70 via-slate-950/40 to-slate-900/90"></div>
           </div>
 
-          <div className="relative z-10 text-center mt-24 ">
+          {/* Hero Header */}
+          <div className="relative z-10 text-center max-w-3xl mx-auto px-4 mt-8 md:mt-12">
             <motion.h1
-              initial={{ opacity: 0, y: -20 }}
+              initial={{ opacity: 0, y: -15 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-4xl md:text-6xl font-black text-white tracking-tight drop-shadow-lg"
+              className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-tight"
             >
-              Find an <span className="text-[#52a3c3]">unpublished</span> deals
+              Find <span className="text-blue-400">Unpublished</span> Deals
             </motion.h1>
-            <p className="text-white/95 mt-4 text-lg hidden md:block">Exclusive fares you won't find anywhere else.</p>
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              className="text-slate-200 mt-3 text-base sm:text-lg font-medium max-w-xl mx-auto"
+            >
+              Exclusive fares you won't find anywhere else on the web.
+            </motion.p>
           </div>
 
-          <div className="relative z-20 max-w-6xl mx-auto mt-10 px-4">
-            <div className="relative bg-white/40 backdrop-blur-md shadow-[0_20px_50px_rgba(0,0,0,0.2)] rounded-2xl p-6 md:p-10 border border-white/20">
-
-            
-
+          {/* Search Box Container */}
+          <div className="relative z-20 max-w-6xl mx-auto mt-10 md:mt-14 px-4 sm:px-6">
+            <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-2xl border border-slate-200/80">
               <form onSubmit={handleSearch} className="relative z-30">
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 15 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="space-y-6"
+                  transition={{ delay: 0.15 }}
+                  className="space-y-5"
                 >
+                  {/* Row 1: Origin & Destination */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    
+                    {/* Origin Input */}
                     <div className="group relative" ref={originRef}>
-                      <label className="text-[11px] font-bold uppercase tracking-wider text-black ml-1 mb-1 block">
-                        Origin
+                      <label className="text-xs font-semibold text-slate-700 mb-1.5 block">
+                        From (Origin)
                       </label>
 
-                      <div className="flex items-center border-2 border-gray-100 group-focus-within:border-[#3aa0c9] rounded-xl px-4 py-3 transition-all">
-                        <PlaneTakeoff size={18} className="text-black mr-3" />
-
+                      <div className="flex items-center border border-slate-200 group-focus-within:border-blue-600 rounded-xl px-3.5 py-2.5 bg-slate-50/50 group-focus-within:bg-white transition-all shadow-2xs">
+                        <PlaneTakeoff size={18} className="text-slate-400 mr-2.5 shrink-0" />
                         <input
                           type="text"
-                          placeholder="Origin"
+                          placeholder="City or Airport (e.g. JFK)"
                           name="origin"
                           value={originQuery}
                           onChange={(e) => searchAirports(e.target.value, "origin")}
-                          className="w-full bg-transparent outline-none"
+                          className="w-full bg-transparent outline-none text-slate-900 text-sm font-medium placeholder:text-slate-400"
+                          autoComplete="off"
                         />
                       </div>
 
                       {showOriginDropdown && (
-                        <div className="absolute top-full mt-2 left-0 w-full bg-white shadow-2xl rounded-2xl max-h-[350px] overflow-y-auto z-[9999]">
-
+                        <div className="absolute top-full mt-2 left-0 w-full bg-white border border-slate-200 shadow-xl rounded-xl max-h-[300px] overflow-y-auto z-[9999]">
                           {loading ? (
-                            <div className="p-4 text-center">
-                              Searching...
+                            <div className="p-4 text-center text-xs font-medium text-slate-500">
+                              Searching airports...
                             </div>
                           ) : originAirports.length > 0 ? (
-
                             originAirports.map((item, index) => (
-
                               <div
                                 key={index}
                                 onClick={() => {
-                                  setOriginQuery(item.iata_code.trim().toUpperCase())
-                                  setShowOriginDropdown(false)
+                                  setOriginQuery(item.iata_code.trim().toUpperCase());
+                                  setShowOriginDropdown(false);
                                 }}
-                                className="p-4 border-b hover:bg-gray-100 cursor-pointer"
+                                className="p-3 border-b border-slate-100 hover:bg-slate-50 cursor-pointer transition-colors"
                               >
-
                                 <div className="flex items-center gap-3">
-
-                                  <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center font-bold">
+                                  <div className="w-9 h-9 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-xs border border-slate-200 shrink-0">
                                     {item.iata_code}
                                   </div>
-
                                   <div>
-                                    <p className="font-semibold">
+                                    <p className="font-bold text-slate-900 text-sm">
                                       {item.city_name}
                                     </p>
-
-                                    <p className="text-xs text-gray-500">
+                                    <p className="text-xs text-slate-500">
                                       {item.name}
                                     </p>
                                   </div>
-
                                 </div>
-
                               </div>
-
                             ))
-
                           ) : (
-
-                            <div className="p-4 text-center text-gray-500">
+                            <div className="p-4 text-center text-xs text-slate-500 font-medium">
                               No Airports Found
                             </div>
-
                           )}
-
                         </div>
                       )}
                     </div>
 
+                    {/* Destination Input */}
                     <div className="group relative" ref={destinationRef}>
-                      <label className="text-[11px] font-bold uppercase tracking-wider text-black ml-1 mb-1 block">
-                        Destination
+                      <label className="text-xs font-semibold text-slate-700 mb-1.5 block">
+                        To (Destination)
                       </label>
 
-                      <div className="flex items-center border-2 border-gray-100 group-focus-within:border-[#3aa0c9] rounded-xl px-4 py-3 transition-all">
-                        <PlaneLanding size={18} className="text-black mr-3" />
-
+                      <div className="flex items-center border border-slate-200 group-focus-within:border-blue-600 rounded-xl px-3.5 py-2.5 bg-slate-50/50 group-focus-within:bg-white transition-all shadow-2xs">
+                        <PlaneLanding size={18} className="text-slate-400 mr-2.5 shrink-0" />
                         <input
                           type="text"
-                          placeholder="Destination"
+                          placeholder="City or Airport (e.g. LHR)"
                           name="destination"
                           value={destinationQuery}
                           onChange={(e) => searchAirports(e.target.value, "destination")}
-                          className="w-full bg-transparent outline-none"
+                          className="w-full bg-transparent outline-none text-slate-900 text-sm font-medium placeholder:text-slate-400"
+                          autoComplete="off"
                         />
                       </div>
 
                       {showDestinationDropdown && (
-                        <div className="absolute top-full mt-2 left-0 w-full bg-white shadow-2xl rounded-2xl max-h-[350px] overflow-y-auto z-[9999]">
-
+                        <div className="absolute top-full mt-2 left-0 w-full bg-white border border-slate-200 shadow-xl rounded-xl max-h-[300px] overflow-y-auto z-[9999]">
                           {loading ? (
-                            <div className="p-4 text-center">
-                              Searching...
+                            <div className="p-4 text-center text-xs font-medium text-slate-500">
+                              Searching airports...
                             </div>
                           ) : destinationAirports.length > 0 ? (
-
                             destinationAirports.map((item, index) => (
-
                               <div
                                 key={index}
                                 onClick={() => {
-
-                                  setDestinationQuery(
-                                    `${item.iata_code}`
-                                  )
-
-                                  setShowDestinationDropdown(false)
-
+                                  setDestinationQuery(`${item.iata_code}`);
+                                  setShowDestinationDropdown(false);
                                 }}
-                                className="p-4 border-b hover:bg-gray-100 cursor-pointer"
+                                className="p-3 border-b border-slate-100 hover:bg-slate-50 cursor-pointer transition-colors"
                               >
-
                                 <div className="flex items-center gap-3">
-
-                                  <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center font-bold">
+                                  <div className="w-9 h-9 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-xs border border-slate-200 shrink-0">
                                     {item.iata_code}
                                   </div>
-
                                   <div>
-                                    <p className="font-semibold">
+                                    <p className="font-bold text-slate-900 text-sm">
                                       {item.city_name}
                                     </p>
-
-                                    <p className="text-xs text-gray-500">
+                                    <p className="text-xs text-slate-500">
                                       {item.name}
                                     </p>
                                   </div>
-
                                 </div>
-
                               </div>
-
                             ))
-
                           ) : (
-
-                            <div className="p-4 text-center text-gray-500">
+                            <div className="p-4 text-center text-xs text-slate-500 font-medium">
                               No Airports Found
                             </div>
-
                           )}
-
                         </div>
                       )}
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-end">
-
-                    <div className="md:col-span-6 grid grid-cols-2 gap-3">
+                  {/* Row 2: Dates, Passengers & Search Action */}
+                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-end">
+                    
+                    {/* Departure & Return Dates */}
+                    <div className="lg:col-span-5 grid grid-cols-2 gap-3">
                       <div>
-                        <label className="text-[11px] font-bold uppercase tracking-wider text-black ml-1 mb-1 block">Departure</label>
-                        <div className="flex items-center border-2 border-gray-100 rounded-xl px-3 py-3 ">
-                          <input type='date' name='departuredDate' className="w-full bg-transparent outline-none text-sm cursor-pointer" />
+                        <label className="text-xs font-semibold text-slate-700 mb-1.5 block">
+                          Departure
+                        </label>
+                        <div className="flex items-center border border-slate-200 rounded-xl px-3 py-2.5 bg-slate-50/50 hover:bg-white transition-all shadow-2xs">
+                          <input
+                            type="date"
+                            name="departuredDate"
+                            className="w-full bg-transparent outline-none text-slate-900 text-xs font-medium cursor-pointer"
+                          />
                         </div>
                       </div>
 
                       <div>
-                        <label className="text-[11px] font-bold uppercase tracking-wider text-black ml-1 mb-1 block">Return</label>
-                        <div className={`flex items-center border-2 transition-all rounded-xl px-3 py-3 ${roundedEnable ? "border-gray-100 " : "border-dashed border-gray-200 bg-transparent"}`}>
+                        <label className="text-xs font-semibold text-slate-700 mb-1.5 block">
+                          Return
+                        </label>
+                        <div
+                          className={`flex items-center border rounded-xl px-3 py-2.5 transition-all shadow-2xs ${
+                            roundedEnable
+                              ? "border-slate-200 bg-slate-50/50"
+                              : "border-dashed border-slate-300 bg-slate-50/30"
+                          }`}
+                        >
                           <input
                             type="date"
                             disabled={!roundedEnable}
                             value={returnDate}
                             onChange={(e) => setReturnDate(e.target.value)}
-                            className="w-full bg-transparent outline-none text-sm disabled:text-black cursor-pointer"
+                            className="w-full bg-transparent outline-none text-slate-900 text-xs font-medium cursor-pointer disabled:text-slate-400"
                           />
                           {roundedEnable ? (
-                            <X size={16} className="text-red-400 cursor-pointer" onClick={() => { setRoundedEnable(false); setReturnDate(""); }} />
+                            <X
+                              size={16}
+                              className="text-slate-400 hover:text-slate-600 cursor-pointer ml-1 shrink-0"
+                              onClick={() => {
+                                setRoundedEnable(false);
+                                setReturnDate("");
+                              }}
+                            />
                           ) : (
-                            <Calendar size={18} className="text-[#101c20] cursor-pointer" onClick={() => setRoundedEnable(true)} />
+                            <Calendar
+                              size={16}
+                              className="text-slate-500 hover:text-blue-600 cursor-pointer ml-1 shrink-0"
+                              onClick={() => setRoundedEnable(true)}
+                            />
                           )}
                         </div>
                       </div>
                     </div>
 
-                    <div className="md:col-span-4 relative">
-                      <label className="text-[11px] font-bold uppercase tracking-wider text-black ml-1 mb-1 block">Travelers & Class</label>
+                    {/* Passengers & Class Selector */}
+                    <div className="lg:col-span-4 relative">
+                      <label className="text-xs font-semibold text-slate-700 mb-1.5 block">
+                        Travelers & Class
+                      </label>
                       <div
                         onClick={() => setOpen(!open)}
-                        className="border-2 border-gray-100 rounded-xl px-4 py-3 text-sm cursor-pointer 
-                         flex justify-between items-center hover:border-gray-200 transition-all"
+                        className="border border-slate-200 rounded-xl px-3.5 py-2.5 bg-slate-50/50 hover:bg-white text-xs cursor-pointer flex justify-between items-center transition-all shadow-2xs"
                       >
-                        <div className="flex items-center gap-2">
-                          <Users size={16} className="text-black" />
-                          <span className="font-medium text-gray-900">{totalText}</span>
-                          <span className="text-[#1f4756] font-bold ml-1">• {cabin}</span>
+                        <div className="flex items-center gap-2 overflow-hidden">
+                          <Users size={16} className="text-slate-500 shrink-0" />
+                          <span className="font-semibold text-slate-900 truncate">
+                            {totalText}
+                          </span>
+                          <span className="text-blue-600 font-bold shrink-0">
+                            • {cabin}
+                          </span>
                         </div>
-                        <span className={`text-black transition-transform ${open ? 'rotate-180' : ''}`}>▼</span>
+                        <ChevronDown
+                          size={16}
+                          className={`text-slate-500 transition-transform duration-200 shrink-0 ${
+                            open ? "rotate-180" : ""
+                          }`}
+                        />
                       </div>
 
+                      {/* Passenger Dropdown Popover */}
                       {open && (
                         <motion.div
-                          initial={{ opacity: 0, scale: 0.95 }}
+                          initial={{ opacity: 0, scale: 0.98 }}
                           animate={{ opacity: 1, scale: 1 }}
-                          className="absolute z-[999] mt-3 w-72 left-0 md:right-0 md:left-auto bg-white border rounded-2xl shadow-2xl p-5 space-y-5"
+                          className="absolute z-[999] mt-2 w-72 left-0 lg:right-0 lg:left-auto bg-white border border-slate-200 rounded-xl shadow-xl p-4 space-y-4"
                         >
-                          {['adults', 'children', 'infants'].map((type) => (
+                          {["adults", "children", "infants"].map((type) => (
                             <div key={type} className="flex justify-between items-center">
                               <div>
-                                <p className="text-sm font-bold capitalize">{type}</p>
-                                <p className="text-[10px] text-black uppercase tracking-tighter">
-                                  {type === 'adults' ? '12+ Years' : type === 'children' ? '2-11 Years' : 'Under 2 Years'}
+                                <p className="text-xs font-bold text-slate-900 capitalize">
+                                  {type}
+                                </p>
+                                <p className="text-[10px] text-slate-400 font-medium">
+                                  {type === "adults"
+                                    ? "12+ Years"
+                                    : type === "children"
+                                    ? "2-11 Years"
+                                    : "Under 2 Years"}
                                 </p>
                               </div>
-                              <div className="flex items-center gap-4">
-                                <button type='button' onClick={() => handleChange(type, -1)} className="w-8 h-8 rounded-lg border-2 border-gray-100 flex items-center justify-center hover:bg-gray-50">-</button>
-                                <span className="font-bold w-4 text-center">{passengers[type]}</span>
-                                <button type='button' onClick={() => handleChange(type, 1)} className="w-8 h-8 rounded-lg border-2 border-[#3aa0c9] text-[#3aa0c9] flex items-center justify-center hover:bg-blue-50">+</button>
+                              <div className="flex items-center gap-3">
+                                <button
+                                  type="button"
+                                  onClick={() => handleChange(type, -1)}
+                                  className="w-7 h-7 rounded-md border border-slate-200 text-slate-600 flex items-center justify-center hover:bg-slate-100 transition-colors"
+                                >
+                                  <Minus size={12} />
+                                </button>
+                                <span className="font-bold text-xs w-4 text-center text-slate-900">
+                                  {passengers[type]}
+                                </span>
+                                <button
+                                  type="button"
+                                  onClick={() => handleChange(type, 1)}
+                                  className="w-7 h-7 rounded-md border border-blue-600 bg-blue-50 text-blue-600 flex items-center justify-center hover:bg-blue-100 transition-colors"
+                                >
+                                  <Plus size={12} />
+                                </button>
                               </div>
                             </div>
                           ))}
 
-                          <div className="border-t pt-4">
-                            <p className='text-xs font-bold text-black uppercase mb-3'>Cabin Class</p>
-                            <div className="flex flex-wrap gap-2">
+                          <div className="border-t border-slate-100 pt-3">
+                            <p className="text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-2">
+                              Cabin Class
+                            </p>
+                            <div className="flex flex-wrap gap-1.5">
                               {["Economy", "Business", "First"].map((item) => (
                                 <button
                                   key={item}
-                                  type='button'
+                                  type="button"
                                   onClick={() => setCabin(item)}
-                                  className={`px-3 py-1.5 text-xs rounded-full border-2 transition-all font-semibold ${cabin === item ? "bg-[#3aa0c9] text-white border-[#3aa0c9]" : "bg-white text-gray-500 border-gray-100 hover:border-gray-300"}`}
+                                  className={`px-3 py-1 text-xs rounded-md border transition-all font-semibold ${
+                                    cabin === item
+                                      ? "bg-slate-900 text-white border-slate-900"
+                                      : "bg-white text-slate-600 border-slate-200 hover:border-slate-300"
+                                  }`}
                                 >
                                   {item}
                                 </button>
@@ -434,8 +471,8 @@ export default function FlightPage() {
 
                           <button
                             onClick={() => setOpen(false)}
-                            type='button'
-                            className="w-full mt-2 bg-gray-900 text-white py-3 rounded-xl text-sm font-bold hover:bg-black transition-colors"
+                            type="button"
+                            className="w-full mt-2 bg-slate-900 text-white py-2 rounded-lg text-xs font-bold hover:bg-slate-800 transition-colors"
                           >
                             Done
                           </button>
@@ -443,9 +480,14 @@ export default function FlightPage() {
                       )}
                     </div>
 
-                    <div className="md:col-span-2">
-                      <button type='submit' className="w-full bg-[#265a6f] hover:bg-[#265a6f] hover:shadow-lg hover:shadow-blue-200 text-white py-3.5 rounded-xl text-sm font-bold transition-all transform active:scale-95">
-                        Search Flights
+                    {/* Search Submit Button */}
+                    <div className="lg:col-span-3">
+                      <button
+                        type="submit"
+                        className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all shadow-md shadow-blue-500/20 flex items-center justify-center gap-2"
+                      >
+                        <Search size={16} />
+                        <span>Search Flights</span>
                       </button>
                     </div>
 
@@ -457,13 +499,482 @@ export default function FlightPage() {
         </div>
       </section>
 
+      {/* Page Content Components */}
       <HowItWorks />
       <FlightDestination />
       <OurServices />
-
       <ExploreNearby />
       <Testimonials />
       <FAQPage />
     </div>
   );
-};
+}
+// import React, { useEffect, useRef, useState } from 'react';
+// import { motion } from "framer-motion";
+// import HowItWorks from './HowItWorks';
+// import { MdClose } from "react-icons/md";
+// import { Calendar, PlaneLanding, PlaneTakeoff, Users, X } from 'lucide-react';
+// import FlightDestination from './Destination/FlightDestination';
+// import ExploreNearby from './ExploreNearby';
+// import FAQPage from './FaqPage';
+// import { useNavigate } from 'react-router-dom';
+// import Testimonials from '../components/Testimonials';
+// import OurServices from '../components/OurServices';
+
+// export default function FlightPage() {
+//   const [roundedEnable, setRoundedEnable] = useState(false)
+//   const [returnDate, setReturnDate] = useState("")
+
+//   const [originQuery, setOriginQuery] = useState("")
+//   const [destinationQuery, setDestinationQuery] = useState("")
+
+//   const [originAirports, setOriginAirports] = useState([])
+//   const [destinationAirports, setDestinationAirports] = useState([])
+
+//   const [showOriginDropdown, setShowOriginDropdown] = useState(false)
+//   const [showDestinationDropdown, setShowDestinationDropdown] = useState(false)
+
+//   const [loading, setLoading] = useState(false)
+
+//   const originRef = useRef(null)
+//   const destinationRef = useRef(null)
+
+//   const navigate = useNavigate()
+
+//   const [formData, setFormData] = useState({
+//     origin: "",
+//     destination: "",
+//     departuredDate: "",
+//     returnDate: ""
+//   })
+
+//   const [passengers, setPassengers] = useState({
+//     adults: 1,
+//     children: 0,
+//     infants: 0
+//   });
+
+//   const [open, setOpen] = useState(false);
+//   const [cabin, setCabin] = useState("Economy")
+
+//   const cabinMap = {
+//     "Economy": "economy",
+//     "Business": "business",
+//     "First Class": "first"
+//   };
+
+//   const handleChange = (type, value) => {
+//     setPassengers((prev) => ({
+//       ...prev,
+//       [type]: Math.max(0, prev[type] + value)
+//     }));
+//   };
+
+//   const totalText = `${passengers.adults} Adult${passengers.adults > 1 ? "s" : ""}${passengers.children ? `, ${passengers.children} Child` : ""
+//     }${passengers.infants ? `, ${passengers.infants} Infant` : ""}`;
+
+//   async function handleSearch(e) {
+
+//     e.preventDefault()
+
+//     const formData = new FormData(e.target)
+
+//     const origin = formData.get("origin");
+//     const destination = formData.get("destination");
+//     const date = formData.get("departuredDate")
+
+//     if (!origin || !destination || !date) {
+//       alert("Please fill all Required field")
+//       return
+//     }
+
+//     navigate("/flight-list", {
+//       state: {
+//         origin,
+//         destination,
+//         date,
+//         returnDate,
+//         adults: passengers.adults,
+//         children: passengers.children,
+//         infants: passengers.infants,
+//         cabin: cabinMap[cabin]
+//       }
+//     })
+
+//   }
+
+//   const searchAirports = async (value, type) => {
+
+//     if (type === "origin") {
+//       setOriginQuery(value)
+//     } else {
+//       setDestinationQuery(value)
+//     }
+
+//     if (value.length < 2) {
+//       if (type === "origin") {
+//         setOriginAirports([])
+//         setShowOriginDropdown(false)
+//       } else {
+//         setDestinationAirports([])
+//         setShowDestinationDropdown(false)
+//       }
+//       return
+//     }
+
+//     try {
+
+//       setLoading(true)
+
+//       const response = await fetch(
+//         `https://www.7uptravel.com/api/flight/airports?query=${value}`
+//       )
+
+//       const result = await response.json()
+
+//       const airportList = result?.data?.data || []
+
+//       if (type === "origin") {
+//         setOriginAirports(airportList)
+//         setShowOriginDropdown(true)
+//       } else {
+//         setDestinationAirports(airportList)
+//         setShowDestinationDropdown(true)
+//       }
+
+//     } catch (error) {
+
+//       console.log(error)
+
+//     } finally {
+
+//       setLoading(false)
+
+//     }
+//   }
+
+//   useEffect(()=>{
+//     function handleClickOutSide (event){
+//       if(originRef.current && !originRef.current.contains(event.target)){
+//         setShowOriginDropdown(false)
+//       }
+
+//       if(destinationRef.current && !destinationRef.current.contains(event.target)){
+//         setShowDestinationDropdown(false)
+//       }
+//     }
+
+//     document.addEventListener("mousedown",handleClickOutSide)
+
+//     return ()=>{
+//       document.removeEventListener("mousedown",handleClickOutSide)
+//     }
+//   },[])
+
+//   return (
+//     <div className="font-sans">
+//       <section className="h-full">
+//         <div className="w-full md:h-[100vh] h-[100vh] rounded-[40px] md:rounded-[60px] pt-24 pb-44 relative overflow-visible shadow-2xl">
+
+//           <div className="absolute inset-0 z-0">
+//             <video
+//               autoPlay
+//               loop
+//               playsInline
+//               muted
+//               src="/video/herobg.mp4"
+//               className="absolute w-full h-full top-0 left-0 object-cover"
+//             />
+//             <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/40"></div>
+//           </div>
+
+//           <div className="relative z-10 text-center mt-24 ">
+//             <motion.h1
+//               initial={{ opacity: 0, y: -20 }}
+//               animate={{ opacity: 1, y: 0 }}
+//               className="text-4xl md:text-6xl font-black text-white tracking-tight drop-shadow-lg"
+//             >
+//               Find an <span className="text-[#52a3c3]">unpublished</span> deals
+//             </motion.h1>
+//             <p className="text-white/95 mt-4 text-lg hidden md:block">Exclusive fares you won't find anywhere else.</p>
+//           </div>
+
+//           <div className="relative z-20 max-w-6xl mx-auto mt-10 px-4">
+//             <div className="relative bg-white/40 backdrop-blur-md shadow-[0_20px_50px_rgba(0,0,0,0.2)] rounded-2xl p-6 md:p-10 border border-white/20">
+
+            
+
+//               <form onSubmit={handleSearch} className="relative z-30">
+//                 <motion.div
+//                   initial={{ opacity: 0, y: 20 }}
+//                   animate={{ opacity: 1, y: 0 }}
+//                   className="space-y-6"
+//                 >
+//                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+//                     <div className="group relative" ref={originRef}>
+//                       <label className="text-[11px] font-bold uppercase tracking-wider text-black ml-1 mb-1 block">
+//                         Origin
+//                       </label>
+
+//                       <div className="flex items-center border-2 border-gray-100 group-focus-within:border-[#3aa0c9] rounded-xl px-4 py-3 transition-all">
+//                         <PlaneTakeoff size={18} className="text-black mr-3" />
+
+//                         <input
+//                           type="text"
+//                           placeholder="Origin"
+//                           name="origin"
+//                           value={originQuery}
+//                           onChange={(e) => searchAirports(e.target.value, "origin")}
+//                           className="w-full bg-transparent outline-none"
+//                         />
+//                       </div>
+
+//                       {showOriginDropdown && (
+//                         <div className="absolute top-full mt-2 left-0 w-full bg-white shadow-2xl rounded-2xl max-h-[350px] overflow-y-auto z-[9999]">
+
+//                           {loading ? (
+//                             <div className="p-4 text-center">
+//                               Searching...
+//                             </div>
+//                           ) : originAirports.length > 0 ? (
+
+//                             originAirports.map((item, index) => (
+
+//                               <div
+//                                 key={index}
+//                                 onClick={() => {
+//                                   setOriginQuery(item.iata_code.trim().toUpperCase())
+//                                   setShowOriginDropdown(false)
+//                                 }}
+//                                 className="p-4 border-b hover:bg-gray-100 cursor-pointer"
+//                               >
+
+//                                 <div className="flex items-center gap-3">
+
+//                                   <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center font-bold">
+//                                     {item.iata_code}
+//                                   </div>
+
+//                                   <div>
+//                                     <p className="font-semibold">
+//                                       {item.city_name}
+//                                     </p>
+
+//                                     <p className="text-xs text-gray-500">
+//                                       {item.name}
+//                                     </p>
+//                                   </div>
+
+//                                 </div>
+
+//                               </div>
+
+//                             ))
+
+//                           ) : (
+
+//                             <div className="p-4 text-center text-gray-500">
+//                               No Airports Found
+//                             </div>
+
+//                           )}
+
+//                         </div>
+//                       )}
+//                     </div>
+
+//                     <div className="group relative" ref={destinationRef}>
+//                       <label className="text-[11px] font-bold uppercase tracking-wider text-black ml-1 mb-1 block">
+//                         Destination
+//                       </label>
+
+//                       <div className="flex items-center border-2 border-gray-100 group-focus-within:border-[#3aa0c9] rounded-xl px-4 py-3 transition-all">
+//                         <PlaneLanding size={18} className="text-black mr-3" />
+
+//                         <input
+//                           type="text"
+//                           placeholder="Destination"
+//                           name="destination"
+//                           value={destinationQuery}
+//                           onChange={(e) => searchAirports(e.target.value, "destination")}
+//                           className="w-full bg-transparent outline-none"
+//                         />
+//                       </div>
+
+//                       {showDestinationDropdown && (
+//                         <div className="absolute top-full mt-2 left-0 w-full bg-white shadow-2xl rounded-2xl max-h-[350px] overflow-y-auto z-[9999]">
+
+//                           {loading ? (
+//                             <div className="p-4 text-center">
+//                               Searching...
+//                             </div>
+//                           ) : destinationAirports.length > 0 ? (
+
+//                             destinationAirports.map((item, index) => (
+
+//                               <div
+//                                 key={index}
+//                                 onClick={() => {
+
+//                                   setDestinationQuery(
+//                                     `${item.iata_code}`
+//                                   )
+
+//                                   setShowDestinationDropdown(false)
+
+//                                 }}
+//                                 className="p-4 border-b hover:bg-gray-100 cursor-pointer"
+//                               >
+
+//                                 <div className="flex items-center gap-3">
+
+//                                   <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center font-bold">
+//                                     {item.iata_code}
+//                                   </div>
+
+//                                   <div>
+//                                     <p className="font-semibold">
+//                                       {item.city_name}
+//                                     </p>
+
+//                                     <p className="text-xs text-gray-500">
+//                                       {item.name}
+//                                     </p>
+//                                   </div>
+
+//                                 </div>
+
+//                               </div>
+
+//                             ))
+
+//                           ) : (
+
+//                             <div className="p-4 text-center text-gray-500">
+//                               No Airports Found
+//                             </div>
+
+//                           )}
+
+//                         </div>
+//                       )}
+//                     </div>
+//                   </div>
+
+//                   <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-end">
+
+//                     <div className="md:col-span-6 grid grid-cols-2 gap-3">
+//                       <div>
+//                         <label className="text-[11px] font-bold uppercase tracking-wider text-black ml-1 mb-1 block">Departure</label>
+//                         <div className="flex items-center border-2 border-gray-100 rounded-xl px-3 py-3 ">
+//                           <input type='date' name='departuredDate' className="w-full bg-transparent outline-none text-sm cursor-pointer" />
+//                         </div>
+//                       </div>
+
+//                       <div>
+//                         <label className="text-[11px] font-bold uppercase tracking-wider text-black ml-1 mb-1 block">Return</label>
+//                         <div className={`flex items-center border-2 transition-all rounded-xl px-3 py-3 ${roundedEnable ? "border-gray-100 " : "border-dashed border-gray-200 bg-transparent"}`}>
+//                           <input
+//                             type="date"
+//                             disabled={!roundedEnable}
+//                             value={returnDate}
+//                             onChange={(e) => setReturnDate(e.target.value)}
+//                             className="w-full bg-transparent outline-none text-sm disabled:text-black cursor-pointer"
+//                           />
+//                           {roundedEnable ? (
+//                             <X size={16} className="text-red-400 cursor-pointer" onClick={() => { setRoundedEnable(false); setReturnDate(""); }} />
+//                           ) : (
+//                             <Calendar size={18} className="text-[#101c20] cursor-pointer" onClick={() => setRoundedEnable(true)} />
+//                           )}
+//                         </div>
+//                       </div>
+//                     </div>
+
+//                     <div className="md:col-span-4 relative">
+//                       <label className="text-[11px] font-bold uppercase tracking-wider text-black ml-1 mb-1 block">Travelers & Class</label>
+//                       <div
+//                         onClick={() => setOpen(!open)}
+//                         className="border-2 border-gray-100 rounded-xl px-4 py-3 text-sm cursor-pointer 
+//                          flex justify-between items-center hover:border-gray-200 transition-all"
+//                       >
+//                         <div className="flex items-center gap-2">
+//                           <Users size={16} className="text-black" />
+//                           <span className="font-medium text-gray-900">{totalText}</span>
+//                           <span className="text-[#1f4756] font-bold ml-1">• {cabin}</span>
+//                         </div>
+//                         <span className={`text-black transition-transform ${open ? 'rotate-180' : ''}`}>▼</span>
+//                       </div>
+
+//                       {open && (
+//                         <motion.div
+//                           initial={{ opacity: 0, scale: 0.95 }}
+//                           animate={{ opacity: 1, scale: 1 }}
+//                           className="absolute z-[999] mt-3 w-72 left-0 md:right-0 md:left-auto bg-white border rounded-2xl shadow-2xl p-5 space-y-5"
+//                         >
+//                           {['adults', 'children', 'infants'].map((type) => (
+//                             <div key={type} className="flex justify-between items-center">
+//                               <div>
+//                                 <p className="text-sm font-bold capitalize">{type}</p>
+//                                 <p className="text-[10px] text-black uppercase tracking-tighter">
+//                                   {type === 'adults' ? '12+ Years' : type === 'children' ? '2-11 Years' : 'Under 2 Years'}
+//                                 </p>
+//                               </div>
+//                               <div className="flex items-center gap-4">
+//                                 <button type='button' onClick={() => handleChange(type, -1)} className="w-8 h-8 rounded-lg border-2 border-gray-100 flex items-center justify-center hover:bg-gray-50">-</button>
+//                                 <span className="font-bold w-4 text-center">{passengers[type]}</span>
+//                                 <button type='button' onClick={() => handleChange(type, 1)} className="w-8 h-8 rounded-lg border-2 border-[#3aa0c9] text-[#3aa0c9] flex items-center justify-center hover:bg-blue-50">+</button>
+//                               </div>
+//                             </div>
+//                           ))}
+
+//                           <div className="border-t pt-4">
+//                             <p className='text-xs font-bold text-black uppercase mb-3'>Cabin Class</p>
+//                             <div className="flex flex-wrap gap-2">
+//                               {["Economy", "Business", "First"].map((item) => (
+//                                 <button
+//                                   key={item}
+//                                   type='button'
+//                                   onClick={() => setCabin(item)}
+//                                   className={`px-3 py-1.5 text-xs rounded-full border-2 transition-all font-semibold ${cabin === item ? "bg-[#3aa0c9] text-white border-[#3aa0c9]" : "bg-white text-gray-500 border-gray-100 hover:border-gray-300"}`}
+//                                 >
+//                                   {item}
+//                                 </button>
+//                               ))}
+//                             </div>
+//                           </div>
+
+//                           <button
+//                             onClick={() => setOpen(false)}
+//                             type='button'
+//                             className="w-full mt-2 bg-gray-900 text-white py-3 rounded-xl text-sm font-bold hover:bg-black transition-colors"
+//                           >
+//                             Done
+//                           </button>
+//                         </motion.div>
+//                       )}
+//                     </div>
+
+//                     <div className="md:col-span-2">
+//                       <button type='submit' className="w-full bg-[#265a6f] hover:bg-[#265a6f] hover:shadow-lg hover:shadow-blue-200 text-white py-3.5 rounded-xl text-sm font-bold transition-all transform active:scale-95">
+//                         Search Flights
+//                       </button>
+//                     </div>
+
+//                   </div>
+//                 </motion.div>
+//               </form>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       <HowItWorks />
+//       <FlightDestination />
+//       <OurServices />
+
+//       <ExploreNearby />
+//       <Testimonials />
+//       <FAQPage />
+//     </div>
+//   );
+// };

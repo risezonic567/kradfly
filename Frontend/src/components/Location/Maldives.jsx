@@ -49,7 +49,7 @@ export default function Maldives() {
                 <div className='max-w-5xl py-10 rounded-3xl bg-gray-100 p-5 mx-auto'>
                     <h2 className='text-lg sm:text-xl font-bold mt-5 mb-5'>🏝️ Featured Hotels in the Maldives</h2>
                     <p className='text-gray-500 mb-5 text-sm sm:text-base leading-relaxed'>
-                    The Maldives is a dream destination known for its turquoise waters, overwater bungalows, and breathtaking marine life. Whether you're planning a honeymoon, a family retreat, or a solo getaway, 7upTravel.com offers everything you need — luxury resorts, flight deals, and car transfers — for a seamless and unforgettable trip.
+                    The Maldives is a dream destination known for its turquoise waters, overwater bungalows, and breathtaking marine life. Whether you're planning a honeymoon, a family retreat, or a solo getaway, Krad Global Travel offers everything you need — luxury resorts, flight deals, and car transfers — for a seamless and unforgettable trip.
                     </p>
                     <hr />
 
@@ -86,14 +86,14 @@ export default function Maldives() {
                         <li>Private sandbank picnics</li>
                     </ul>
 
-                    <h2 className='text-lg sm:text-xl font-bold mt-5 mb-5'>✈️ Flights & 🚗 Transfers with 7upTravel.com</h2>
+                    <h2 className='text-lg sm:text-xl font-bold mt-5 mb-5'>✈️ Flights & 🚗 Transfers with Krad Global Travel</h2>
                     <ul className='text-gray-500 list-disc pl-5 sm:pl-10'>
                         <li>✈️ Find the best flight deals to Malé International Airport</li>
                         <li>🚤 Book seamless speedboat or seaplane transfers to your resort</li>
                         <li>🚗 Island car rentals available on local islands</li>
                     </ul>
 
-                    <h2 className='text-lg sm:text-xl font-bold mt-5 mb-5'>🚀 Why Book with 7upTravel.com?</h2>
+                    <h2 className='text-lg sm:text-xl font-bold mt-5 mb-5'>🚀 Why Book with Krad Global Travel?</h2>
                     <ul className='text-gray-500 list-disc pl-5 sm:pl-10'>
                         <li>✅ Handpicked island resorts and exclusive offers</li>
                         <li>🌐 Compare hotels, flights, and transfers in one place</li>
@@ -102,7 +102,7 @@ export default function Maldives() {
 
 
                     <p className='font-semibold text-gray-500 mt-5 mb-5 text-sm sm:text-base'>
-                      Paradise awaits! Book your Maldives escape today with 7upTravel.com and dive into luxury, tranquility, and unforgettable memories.
+                      Paradise awaits! Book your Maldives escape today with Krad Global Travel and dive into luxury, tranquility, and unforgettable memories.
                       </p>
                  </div>
 

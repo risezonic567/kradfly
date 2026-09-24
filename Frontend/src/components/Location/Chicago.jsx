@@ -89,7 +89,7 @@ export default function Chicago() {
                         <li><b>Chicago Getaway Hostel:</b> Located in Lincoln Park, ideal for those looking for comfort and value.</li>
                     </ul>
 
-                    <h2 className='text-lg sm:text-xl font-bold mt-5 mb-5'>📌 Why Book with 7UPTRAVEL LLC?</h2>
+                    <h2 className='text-lg sm:text-xl font-bold mt-5 mb-5'>📌 Why Book with KRAD GLOBAL TRAVEL LLC?</h2>
                     <ul className='text-gray-500 list-disc pl-5 sm:pl-10'>
                         <li>✅ Up to 60% OFF on select Chicago hotels</li>
                         <li>🏙️ Hotels near the Bean, Navy Pier, Magnificent Mile, and Wrigley Field</li>
@@ -103,7 +103,7 @@ export default function Chicago() {
                     </p>
 
                     <p className='font-semibold text-gray-500 mt-5 mb-5 text-sm sm:text-base'>
-                      Start planning your stay in Chicago today with 7UPTRAVEL LLC and enjoy exclusive deals at top-rated hotels across the city!
+                      Start planning your stay in Chicago today with KRAD GLOBAL TRAVEL LLC and enjoy exclusive deals at top-rated hotels across the city!
                     </p>
                 </div>
 

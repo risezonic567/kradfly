@@ -9,12 +9,12 @@ export default function Cancellation() {
       <h1 className='text-center text-xl sm:text-xl md:text-2xl font-bold'>Cancellation Policy</h1>
 
       <p className='py-6 text-gray-400 font-semibold text-sm sm:text-base leading-relaxed'>
-        At 7UPTRAVEL LLC, we are committed to nurturing a trustworthy relationship with you. This Cancellation Policy outlines the terms under which you may cancel your hotel or car rental bookings.
+        At KRAD GLOBAL TRAVEL LLC, we are committed to nurturing a trustworthy relationship with you. This Cancellation Policy outlines the terms under which you may cancel your hotel or car rental bookings.
       </p>
 
       <h1 className='text-xl md:text-xl text-gray-700 font-bold'>General Policy</h1>
       <ul className='list-disc text-gray-500 pl-5 sm:pl-6 py-5 space-y-2 text-sm sm:text-base'>
-        <li>All bookings made through 7UPTRAVEL LLC for car rentals and hotel accommodations are subject to this Cancellation Policy.</li>
+        <li>All bookings made through KRAD GLOBAL TRAVEL LLC for car rentals and hotel accommodations are subject to this Cancellation Policy.</li>
         <li>Specific cancellation terms may vary by service provider. Please review the cancellation terms specific to your booking at the time of reservation.</li>
       </ul>
 
@@ -48,7 +48,7 @@ export default function Cancellation() {
       <h1 className='text-xl md:text-xl text-gray-700 font-bold'>Policy Updates</h1>
       <ul className='list-disc text-gray-500 pl-5 sm:pl-6 py-5 space-y-2 text-sm sm:text-base'>
         <li>
-          7UPTRAVEL LLC may update this Cancellation Policy at any time without notice. Continued use of our services implies acceptance of any changes. This Cancellation Policy is governed by and forms part of our 
+          KRAD GLOBAL TRAVEL LLC may update this Cancellation Policy at any time without notice. Continued use of our services implies acceptance of any changes. This Cancellation Policy is governed by and forms part of our 
           <Link to="/terms-condition" className='text-blue-600 underline'> Terms and Conditions.</Link>
         </li>
       </ul>

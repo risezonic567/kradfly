@@ -46,9 +46,9 @@ export default function LasVegas() {
                 </motion.div>
 
                 <div className='max-w-5xl py-10 rounded-3xl bg-gray-100 p-5 mx-auto'>
-                    <h2 className='text-lg sm:text-xl font-bold mt-5 mb-5'>🎰 Discover Las Vegas with 7upTravel</h2>
+                    <h2 className='text-lg sm:text-xl font-bold mt-5 mb-5'>🎰 Discover Las Vegas with Krad Global Travel</h2>
                     <p className='text-gray-500 mb-5 text-sm sm:text-base leading-relaxed'>
-                        Experience the thrill of Las Vegas — the Entertainment Capital of the World! Whether you're visiting for dazzling shows, high-stakes casinos, or legendary nightlife, 7upTravel makes it easy to get there and explore with top-rated flight deals and convenient car rental options.
+                        Experience the thrill of Las Vegas — the Entertainment Capital of the World! Whether you're visiting for dazzling shows, high-stakes casinos, or legendary nightlife, Krad Global Travel makes it easy to get there and explore with top-rated flight deals and convenient car rental options.
                     </p>
                     <hr />
 
@@ -56,7 +56,7 @@ export default function LasVegas() {
                     <ul className='text-gray-500 list-disc pl-5 sm:pl-10'>
                         <li><b>Affordable Airfare:</b> Score unbeatable deals on nonstop flights from major cities across the U.S.</li>
                         <li><b>Flexible Schedules: </b> Choose from morning, afternoon, or red-eye flights to fit your Vegas plans.</li>
-                        <li><b>Last-Minute Deals:</b> Need a quick escape? 7upTravel offers spontaneous travel savings to Las Vegas.</li>
+                        <li><b>Last-Minute Deals:</b> Need a quick escape? Krad Global Travel offers spontaneous travel savings to Las Vegas.</li>
                     </ul>
 
                     <h2 className='text-lg sm:text-xl font-bold mt-5 mb-5'>🚗 Car Rentals Made Easy</h2>
@@ -74,7 +74,7 @@ export default function LasVegas() {
                         <li>Hoover Dam & Grand Canyon day trips with your rental car</li>
                     </ul>
 
-                    <h2 className='text-lg sm:text-xl font-bold mt-5 mb-5'>🚀 Why Book with 7upTravel?</h2>
+                    <h2 className='text-lg sm:text-xl font-bold mt-5 mb-5'>🚀 Why Book with Krad Global Travel?</h2>
                     <ul className='text-gray-500 list-disc pl-5 sm:pl-10'>
                         <li>✅ Low fares on flights to Las Vegas</li>
                         <li>🚘 Affordable car rental options from top providers</li>
@@ -83,7 +83,7 @@ export default function LasVegas() {
                     </ul>
 
                     <p className='font-semibold text-gray-500 mt-5 mb-5 text-sm sm:text-base'>
-                       Start your Las Vegas journey with 7upTravel — book your flight and car rental today for big savings and unforgettable memories!
+                       Start your Las Vegas journey with Krad Global Travel — book your flight and car rental today for big savings and unforgettable memories!
                     </p>
                  </div>
 

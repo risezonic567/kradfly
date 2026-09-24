@@ -45,9 +45,9 @@ export default function Miami() {
                 </motion.div>
 
                 <div className='max-w-5xl py-10 rounded-3xl bg-gray-100 p-5 mx-auto'>
-                    <h2 className='text-lg sm:text-xl font-bold mt-5 mb-5'>🌴 Explore Miami with 7UpTravel</h2>
+                    <h2 className='text-lg sm:text-xl font-bold mt-5 mb-5'>🌴 Explore Miami with Krad Global Travel</h2>
                     <p className='text-gray-500 mb-5 text-sm sm:text-base leading-relaxed'>
-                        Welcome to Miami — where sun, style, and vibrant city life meet the ocean breeze. Whether you're heading to the beach, nightlife, or a cultural escape, 7UpTravel helps you get there with the best flight deals and reliable car rental options.
+                        Welcome to Miami — where sun, style, and vibrant city life meet the ocean breeze. Whether you're heading to the beach, nightlife, or a cultural escape, Krad Global Travel helps you get there with the best flight deals and reliable car rental options.
                     </p>
                     <hr />
 
@@ -72,7 +72,7 @@ export default function Miami() {
                         <li>South Beach</li>
                     </ul>
 
-                    <h2 className='text-lg sm:text-xl font-bold mt-5 mb-5'>🎯 Why Choose 7UpTravel?</h2>
+                    <h2 className='text-lg sm:text-xl font-bold mt-5 mb-5'>🎯 Why Choose Krad Global Travel?</h2>
                     <ul className='pl-5 sm:pl-10 list-disc mb-5 text-gray-500 text-sm sm:text-base'>
                         <li>✅ Exclusive flight and rental deals</li>
                         <li>🧳 Bundle & save on airfare and car bookings</li>
@@ -81,7 +81,7 @@ export default function Miami() {
                     </ul>
 
                     <p className='font-semibold text-gray-500 mt-5 mb-5 text-sm sm:text-base'>
-                        Ready to discover Miami? Book your flight and car rental with 7UpTravel and travel smart from takeoff to touchdown!
+                        Ready to discover Miami? Book your flight and car rental with Krad Global Travel and travel smart from takeoff to touchdown!
                     </p>
                  </div>
 

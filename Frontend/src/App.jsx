@@ -39,93 +39,89 @@ import Signup from './pages/User/Signup'
 import Login from './pages/User/Login'
 import Profile from './pages/User/Profile'
 import ForgetPassword from './pages/User/ForgetPassword'
-import {GoogleOAuthProvider} from '@react-oauth/google'
+import { GoogleOAuthProvider } from '@react-oauth/google'
 import FlightSearchPage from './components/flights-lists';
 import FlightDetailsPage from './components/FlightDetailsPage';
 import Faq from './pages/FaqPage';
 
 
 export default function App() {
-  const [loader,setLoader]=useState(true)
-  
-  useEffect(()=>{
-    const timer = setTimeout(()=>{
+  const [loader, setLoader] = useState(true)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
       setLoader(false)
-    },2000)
+    }, 2000)
 
     // return clearTimeout(timer)
-  },[])
+  }, [])
 
-  if(loader)
-    return <FlightLoader/>
+  // if(loader)
+  // return <FlightLoader/>
 
   return (
     <>
-    <BrowserRouter>
-    <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_KEY}>
-    <ScrollTop/>
-    <Navbar/>
-    <Routes>
-        <Route path='/' element={<FlightPage/>}/>
-        <Route path='/car-rental' element={<CarRentalPage/>}/>
-        <Route path='/hotel' element={<HotelPage/>}/>
-        <Route path='/about-us' element={<AboutUsPage/>}/>
-        <Route path='/cruise' element={<CruisePage/>}/>
-        <Route path='/flight' element={<Flight/>}/>
-        <Route path='/faq' element={<Faq/>}/>
-        <Route path='/travel-deals' element={<TravelsDeal/>}/>
-        <Route path='/checkout' element={<CheckoutPage/>}/>
+      <BrowserRouter>
+        <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_KEY}>
+          <ScrollTop />
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<FlightPage />} />
+            <Route path='/car-rental' element={<CarRentalPage />} />
+            <Route path='/hotel' element={<HotelPage />} />
+            <Route path='/about-us' element={<AboutUsPage />} />
+            <Route path='/cruise' element={<CruisePage />} />
+            <Route path='/flight' element={<Flight />} />
+            <Route path='/faq' element={<Faq />} />
+            <Route path='/travel-deals' element={<TravelsDeal />} />
+            <Route path='/checkout' element={<CheckoutPage />} />
 
 
-        <Route path='/flight-details' element={<FlightDetailsPage/>}/> 
-
-
-
-        {/* location pages */}
-
-        <Route path='/california' element={<California/>}/>
-        <Route path='/chicago' element={<Chicago/>}/>
-        <Route path='/las-vegas' element={<LasVegas/>}/>
-        <Route path='/los-angeles' element={<LosAngeles/>}/>
-        <Route path='/miami' element={<Miami/>}/>
-        <Route path='/new-york' element={<NewYork/>}/>
-        <Route path='/san-francisco' element={<SanFrancisco/>}/>
-        <Route path='/sanjosh' element={<Sanjosh/>}/>
-        <Route path='/thailand' element={<Thailand/>}/>
-        <Route path='/hong-kong' element={<Hongkong/>}/>
-        <Route path='/maldives' element={<Maldives/>}/>
-        <Route path='/switzerland' element={<Switzerland/>}/>
-
-        {/* User Section */}
-
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/sign-up' element={<Signup/>}/>
-        <Route path="/profile" element={<Profile/>}/>
-        <Route path="/forget-password" element={<ForgetPassword/>}/>
-
-
-    
-        <Route path='/cancellation' element={<Cancellation/>}/>
-        <Route path='/terms-condition' element={<TermsCondition/>}/>
-        <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
-        <Route path='/disclaimer' element={<Disclaimer/>}/>
-        <Route path='/refund-policy' element={<RefundPolicy/>}/>
+            <Route path='/flight-details' element={<FlightDetailsPage />} />
 
 
 
-        <Route path="/flight-list" element={<FlightSearchPage/>}/>
+            {/* location pages */}
+
+            <Route path='/california' element={<California />} />
+            <Route path='/chicago' element={<Chicago />} />
+            <Route path='/las-vegas' element={<LasVegas />} />
+            <Route path='/los-angeles' element={<LosAngeles />} />
+            <Route path='/miami' element={<Miami />} />
+            <Route path='/new-york' element={<NewYork />} />
+            <Route path='/san-francisco' element={<SanFrancisco />} />
+            <Route path='/sanjosh' element={<Sanjosh />} />
+            <Route path='/thailand' element={<Thailand />} />
+            <Route path='/hong-kong' element={<Hongkong />} />
+            <Route path='/maldives' element={<Maldives />} />
+            <Route path='/switzerland' element={<Switzerland />} />
+
+            {/* User Section */}
 
 
 
-        <Route path='/contact-us' element={<ContactPage/>}/>
 
-        <Route path='/*' element={<NotFound/>}/>
+            <Route path='/cancellation' element={<Cancellation />} />
+            <Route path='/terms-condition' element={<TermsCondition />} />
+            <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+            <Route path='/disclaimer' element={<Disclaimer />} />
+            <Route path='/refund-policy' element={<RefundPolicy />} />
 
-    </Routes> 
-    <ScrollButton/>
-    <Footer/>
-    </GoogleOAuthProvider>
-   </BrowserRouter>
+
+
+            <Route path="/flight-list" element={<FlightSearchPage />} />
+
+
+
+            <Route path='/contact-us' element={<ContactPage />} />
+
+            <Route path='/*' element={<NotFound />} />
+
+          </Routes>
+          <ScrollButton />
+          <Footer />
+        </GoogleOAuthProvider>
+      </BrowserRouter>
     </>
   )
 }
