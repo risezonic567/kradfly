@@ -1,4 +1,4 @@
-name: AutoDeploy through Jenkins to 7upTravel
+name: AutoDeploy through Jenkins to kradfly
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
           key: ${{secrets.SSH_PRIVATE_KEY}}
           script: |
           
-           cd /var/www/7upTravel
+           cd /var/www/kradfly
 
            git pull origin main
 

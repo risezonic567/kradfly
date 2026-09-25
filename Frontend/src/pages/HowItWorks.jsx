@@ -80,7 +80,7 @@ export default function Features() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
             Why Book With{" "}
             <span className="text-blue-600">
-              KRAD GLOBAL TRAVEL?
+              Krad Fly?
             </span>
           </h2>
 
@@ -175,7 +175,7 @@ export default function Features() {
 //             viewport={{ once: true }}
 //             className="text-4xl md:text-5xl font-extrabold text-gray-950 mb-4 tracking-tighter"
 //           >
-//             Why Book With <span className="text-blue-600">KRAD GLOBAL TRAVEL?</span>
+//             Why Book With <span className="text-blue-600">Krad Fly?</span>
 //           </motion.h2>
 
 //           <motion.p 

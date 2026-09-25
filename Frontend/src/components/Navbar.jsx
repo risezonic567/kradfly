@@ -64,8 +64,8 @@ export default function Navbar() {
         {/* Logo - properly contained */}
         <Link to="/" className="flex items-center shrink-0 transition-opacity hover:opacity-90">
           <img
-            src="/logo/logo1.png"
-            alt="Krad Global Travel"
+            src="/logo/kradfly.png"
+            alt="Krad Fly"
             className="h-14 sm:h-16 md:h-18 lg:h-22 w-auto object-contain"
           />
         </Link>
@@ -150,7 +150,7 @@ export default function Navbar() {
                 <Link to="/" onClick={() => setOpen(false)} className="shrink-0">
                   <img
                     src="/logo/logo1.png"
-                    alt="Krad Global Travel"
+                    alt="Krad Fly"
                     className="h-12 sm:h-14 w-auto object-contain"
                   />
                 </Link>
@@ -313,7 +313,7 @@ export default function Navbar() {
 //         <Link to="/" className="flex items-center shrink-0 transition-opacity hover:opacity-90">
 //           <img
 //             src="/logo/logo1.png"
-//             alt="Krad Global Travel"
+//             alt="Krad Fly"
 //             className="h-12 sm:h-14 w-auto object-contain"
 //           />
 //         </Link>
@@ -398,7 +398,7 @@ export default function Navbar() {
 //                 <Link to="/" onClick={() => setOpen(false)} className="shrink-0">
 //                   <img
 //                     src="/logo/logo.png"
-//                     alt="Krad Global Travel"
+//                     alt="Krad Fly"
 //                     className="h-10 w-auto object-contain"
 //                   />
 //                 </Link>

@@ -106,7 +106,7 @@ export default function ContactPage() {
         </h1>
         
         <p className="max-w-2xl mx-auto text-slate-600 text-sm md:text-base leading-relaxed">
-          At <strong className="text-blue-600 font-semibold">KRAD GLOBAL TRAVEL LLC</strong>, we are more than booking agents—we are your personal travel companions. Share your travel plans with us today.
+          At <strong className="text-blue-600 font-semibold">Krad Fly LLC</strong>, we are more than booking agents—we are your personal travel companions. Share your travel plans with us today.
         </p>
       </motion.section>
 
@@ -118,7 +118,7 @@ export default function ContactPage() {
           <div className="lg:col-span-5 bg-slate-950 relative min-h-[360px] lg:min-h-full flex flex-col justify-between p-8 md:p-10 text-white overflow-hidden group">
             <img
               src="/images/Contact Us Banner.jpg.jpeg"
-              alt="Contact Krad Global Travel"
+              alt="Contact Krad Fly"
               className="absolute inset-0 w-full h-full object-cover opacity-45 group-hover:scale-105 transition-transform duration-700 ease-out"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-slate-950/20" />

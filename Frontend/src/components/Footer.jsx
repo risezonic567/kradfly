@@ -15,8 +15,8 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link to="/" className="inline-block mb-4">
               <img 
-                src="/logo/logo1.png" 
-                alt="kradgloballogo" 
+                src="/logo/kradfly.png" 
+                alt="kradfly" 
                 className="h-16 w-auto bg-white object-contain rounded-lg p-2 shadow-md"
               />
             </Link>
@@ -111,7 +111,6 @@ export default function Footer() {
 
         </div>
 
-        {/* Global Offices */}
         <div className="border-t border-slate-800 pt-8 pb-6">
           <h4 className="text-white text-base font-bold mb-4">Visit us at:</h4>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs leading-relaxed text-slate-400">
@@ -119,20 +118,13 @@ export default function Footer() {
               <p className="font-semibold text-white mb-1 text-sm">Dubai Office</p>
               <p>MOHAMED HAMED SAIF ALRUMHI BUILDING, Office Number B 1-106, Al Mutheena, Deira Dubai - UAE</p>
             </div>
-            <div className="bg-slate-900/50 p-4 rounded-xl border border-slate-800/60">
-              <p className="font-semibold text-white mb-1 text-sm">USA Office</p>
-              <p>17662 Irvine Blvd Suite 9, Tustin, CA 92780</p>
-            </div>
-            <div className="bg-slate-900/50 p-4 rounded-xl border border-slate-800/60">
-              <p className="font-semibold text-white mb-1 text-sm">India Office</p>
-              <p>272 GF, Sector 38, Gurugram, Haryana, India 122001</p>
-            </div>
+           
           </div>
         </div>
 
         {/* Bottom Copyright Bar */}
         <div className="border-t border-slate-800 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400 gap-4">
-          <p>© {currentYear} KRAD GLOBAL TRAVEL LLC. All rights reserved.</p>
+          <p>© {currentYear} Krad Fly LLC. All rights reserved.</p>
           <div className="flex flex-wrap justify-center gap-6">
             <Link to="/privacy-policy" className="hover:text-blue-400 font-semibold transition-colors">
               Privacy Policy
@@ -250,7 +242,7 @@ export default function Footer() {
 
 //         {/* Bottom Bar */}
 //         <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center text-sm gap-4">
-//           <p>©2026 KRAD GLOBAL TRAVEL LLC. All rights reserved.</p>
+//           <p>©2026 Krad Fly LLC. All rights reserved.</p>
 //           <div className="flex gap-6">
 //             <Link to="/privacy-policy" className='hover:text-blue-500 font-semi-bold'>Privacy Policy</Link>
 //             <Link to="/terms-condition" className='hover:text-blue-500 font-semi-bold'>Terms and conditions</Link>

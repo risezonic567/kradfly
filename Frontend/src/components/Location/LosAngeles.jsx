@@ -61,7 +61,7 @@ export default function LosAngeles() {
                     </ul>
 
                     <p className='font-semibold text-gray-500 mt-5 mb-5 text-sm sm:text-base'>
-                      ✨ Tip: Use filters on KRAD GLOBAL TRAVEL LLC to find the best deals, real guest reviews, and exclusive offers on these hotels and more in Los Angeles.
+                      ✨ Tip: Use filters on Krad Fly LLC to find the best deals, real guest reviews, and exclusive offers on these hotels and more in Los Angeles.
                     </p>
                  </div>
 

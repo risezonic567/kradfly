@@ -30,7 +30,7 @@ export default function Testimonials() {
             Trusted by Travelers Worldwide
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-            Read verified feedback from our clients about their flight, hotel, and travel booking experiences with Krad Global Travel.
+            Read verified feedback from our clients about their flight, hotel, and travel booking experiences with Krad Fly.
           </p>
 
           {/* Clean Metric Counters */}
@@ -193,7 +193,7 @@ export default function Testimonials() {
 
 //       <div className='text-center mb-10 px-4'>
 //         <h2 className='text-3xl md:text-4xl font-bold text-black/70 mb-4'>
-//           Why Customers Love Krad Global Travel
+//           Why Customers Love Krad Fly
 //         </h2>
 
 //         <div className='max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center mt-6'>

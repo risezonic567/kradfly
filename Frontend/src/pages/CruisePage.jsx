@@ -273,10 +273,10 @@ export default function CruisePage() {
               {/* Branding Footer */}
               <div className="mt-8 pt-6 border-t border-white/10 text-xs text-slate-300">
                 <p className="mb-2">
-                  At <Link to="#" className="text-cyan-300 font-bold hover:underline">KRAD GLOBAL TRAVEL LLC,</Link> we strive to make your cruise dreams a reality.
+                  At <Link to="#" className="text-cyan-300 font-bold hover:underline">Krad Fly LLC,</Link> we strive to make your cruise dreams a reality.
                 </p>
                 <p className="font-semibold text-cyan-200">
-                  Book smart, travel happy — only with <Link to="#" className="text-cyan-300 underline font-bold">KRAD GLOBAL TRAVEL LLC.</Link>
+                  Book smart, travel happy — only with <Link to="#" className="text-cyan-300 underline font-bold">Krad Fly LLC.</Link>
                 </p>
               </div>
             </div>
@@ -493,16 +493,16 @@ export default function CruisePage() {
 //                 <li>Communicate any special needs or dietary restrictions early.</li>
 //             </ul>
 
-//                 <h2 className='text-lg font-bold mt-5 mb-5'>Why Book Your Cruise with Krad Global Travel?</h2>
+//                 <h2 className='text-lg font-bold mt-5 mb-5'>Why Book Your Cruise with Krad Fly?</h2>
 //                 <p className='text-gray-500'>
-//                     At <Link className='text-blue-600'>KRAD GLOBAL TRAVEL LLC,</Link> we strive to make your cruise dreams a reality. Our expert support team ensures personalized service, competitive pricing, and a hassle-free booking process from start to finish.
+//                     At <Link className='text-blue-600'>Krad Fly LLC,</Link> we strive to make your cruise dreams a reality. Our expert support team ensures personalized service, competitive pricing, and a hassle-free booking process from start to finish.
 //                 </p>
 
 //                 <p className='text-gray-500 mt- mb-5'>
 //                     Ready to embark on your next ocean adventure? Contact our support team today and let us guide you to the perfect cruise experience.
 //                 </p>
 //                 <p className='text-gray-500 font-bold'>
-//                     Book smart, travel happy — only with <Link className='text-blue-500'>KRAD GLOBAL TRAVEL LLC.</Link>
+//                     Book smart, travel happy — only with <Link className='text-blue-500'>Krad Fly LLC.</Link>
 //                 </p>
 
            

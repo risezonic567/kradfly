@@ -4,7 +4,7 @@ services:
 
   backend:
     build: ./Backend
-    container_name: 7uptravel_backend
+    container_name: kradfly_backend
     restart: always
 
     ports:
@@ -15,7 +15,7 @@ services:
 
   frontend:
     build: ./Frontend
-    container_name: 7uptravel_frontend
+    container_name: kradfly_frontend
     restart: always
 
     ports:
