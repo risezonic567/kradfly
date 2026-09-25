@@ -172,13 +172,13 @@ export default function FlightPage() {
           </div>
 
           <div className="relative z-10 text-center max-w-3xl mx-auto px-4 mt-8 md:mt-12">
-            <motion.h1
+          {/*  <motion.h1
               initial={{ opacity: 0, y: -15 }}
               animate={{ opacity: 1, y: 0 }}
               className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-tight"
             >
               Find <span className="text-blue-400">Unpublished</span> Deals
-            </motion.h1>
+            </motion.h1>*/}
             <motion.p
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
