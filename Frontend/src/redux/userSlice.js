@@ -16,7 +16,7 @@ export const loginUser = createAsyncThunk(
   "/user/login",
   async (data, thunkAPI) => {
     try {
-      const response = await fetch("https://www.7uptravel.com/api/user/login", {
+      const response = await fetch("https://www.kradfly.com/api/user/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -49,7 +49,7 @@ export const createUser = createAsyncThunk(
   "/user/register",
   async (data, thunkAPI) => {
     try {
-      const response = await fetch("https://www.7uptravel.com/api/user/register", {
+      const response = await fetch("https://www.kradfly.com/api/user/register", {
         method: "POST",
         headers: {
           "Content-type": "application/json"

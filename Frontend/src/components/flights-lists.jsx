@@ -283,7 +283,7 @@ const FlightSearchPage = () => {
                 setLoading(true)
 
                 const res = await fetch(
-                    "https://www.7uptravel.com/api/flight/flight-search",
+                    "https://www.kradfly.com/api/flight/flight-search",
                     {
                         method: "POST",
                         headers: {

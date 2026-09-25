@@ -100,7 +100,7 @@ export default function FlightSearchSection() {
       setLoading(true);
 
       const response = await fetch(
-        `https://www.7uptravel.com/api/flight/airports?query=${value}`
+        `https://www.kradfly.com/api/flight/airports?query=${value}`
       );
 
       const result = await response.json();
@@ -578,7 +578,7 @@ export default function FlightSearchSection() {
 //       setLoading(true)
 
 //       const response = await fetch(
-//         `https://www.7uptravel.com/api/flight/airports?query=${value}`
+//         `https://www.kradfly.com/api/flight/airports?query=${value}`
 //       )
 
 //       const result = await response.json()

@@ -8,7 +8,7 @@ services:
     restart: always
 
     ports:
-      - "3200:3200"
+      - "7200:3100"
 
     env_file:
       - ./Backend/.env
@@ -19,7 +19,7 @@ services:
     restart: always
 
     ports:
-      - "6100:80"
+      - "6200:80"
 
     depends_on:
       - backend

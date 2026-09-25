@@ -155,7 +155,7 @@ export default function CheckoutPage() {
       // =========================
 
       const bookingRes = await fetch(
-        "https://www.7uptravel.com/api/checkout/booking",
+        "https://www.kradfly.com/api/checkout/booking",
         {
           method: "POST",
 
@@ -202,7 +202,7 @@ export default function CheckoutPage() {
       }
 
       const paymentRes = await fetch(
-        "https://www.7uptravel.com/api/payment/initiate",
+        "https://www.kradfly.com/api/payment/initiate",
         {
           method: "POST",
 
@@ -768,7 +768,7 @@ export default function CheckoutPage() {
 //       // =========================
 
 //       const bookingRes = await fetch(
-//         "https://www.7uptravel.com/api/checkout/booking",
+//         "https://www.kradfly.com/api/checkout/booking",
 //         {
 //           method: "POST",
 
@@ -817,7 +817,7 @@ export default function CheckoutPage() {
 //       }
 
 //       const paymentRes = await fetch(
-//         "https://www.7uptravel.com/api/payment/initiate",
+//         "https://www.kradfly.com/api/payment/initiate",
 //         {
 //           method: "POST",
 

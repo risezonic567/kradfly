@@ -166,13 +166,13 @@ export default function TermsCondition() {
 
       <h2 className="text-xl md:text-xl font-bold mt-6 mb-2">Customer Support and Inguires</h2>
       <p className='text-gray-500'>
-        For any payment-related inquiries, including questions about billing descriptors, chargeback support, or refund status, please contact us at support@7uptravel.com or call 866-403-3917. Our business address is Krad Fly, 17662 Irvine Blvd Suite 9, Tustin, CA 92780, United States. We aim to respond to all inquiries within 2 business days.
+        For any payment-related inquiries, including questions about billing descriptors, chargeback support, or refund status, please contact us at support@kradfly.com or call 866-403-3917. Our business address is Krad Fly, 17662 Irvine Blvd Suite 9, Tustin, CA 92780, United States. We aim to respond to all inquiries within 2 business days.
       </p>
 
       <h2 className="text-xl md:text-xl font-bold mt-6 mb-2">Acknowledgment of Buyer Protection Rights</h2>
       <p className='text-gray-500'>Users may have access to payment platform protections depending on the method used (e.g., PayPal Purchase Protection or Stripe Dispute Resolution). Krad Fly does not restrict users’ rights to file claims under such protection policies but encourages users to contact us first for a faster resolution.</p>
       <h2 className="text-xl md:text-xl font-bold mt-6 mb-2">Business-to-Business (B2B) Payment Terms (For Trevipay Eligibility)</h2>
-      <p className='text-gray-500'>For qualified business clients, Krad Fly may offer invoiced billing with net terms, subject to credit approval and separate agreement. Standard terms are Net 30, and late payments may incur a 1.5% monthly finance charge. Businesses interested in B2B billing should contact info@7uptravel.com to apply.</p>
+      <p className='text-gray-500'>For qualified business clients, Krad Fly may offer invoiced billing with net terms, subject to credit approval and separate agreement. Standard terms are Net 30, and late payments may incur a 1.5% monthly finance charge. Businesses interested in B2B billing should contact info@kradfly.com to apply.</p>
 
 
 

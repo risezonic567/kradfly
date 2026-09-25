@@ -24,7 +24,7 @@ const handleSubmit = async (e) => {
     setLoading(true);
     setError("");
 
-    const res = await fetch("https://www.7uptravel.com/api/user/login", {
+    const res = await fetch("https://www.kradfly.com/api/user/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -61,7 +61,7 @@ const handleSubmit = async (e) => {
 };
 //  const handleGoogleLogin = async (credentialResponse) => {
 //   try {
-//     const res = await fetch("https://www.7uptravel.com/api/user/google-auth", {
+//     const res = await fetch("https://www.kradfly.com/api/user/google-auth", {
 //       method: "POST",
 //       headers: {
 //         "Content-Type": "application/json",

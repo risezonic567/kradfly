@@ -27,7 +27,7 @@ export default function ContactPage() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://www.7uptravel.com/api/contactus/send", {
+      const response = await fetch("https://www.kradfly.com/api/contactus/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -343,12 +343,12 @@ export default function ContactPage() {
             </div>
 
             <a 
-              href="mailto:info@7uptravel.com" 
+              href="mailto:info@kradfly.com" 
               className="inline-flex items-center justify-between w-full text-sm font-semibold text-blue-600 bg-blue-50/80 hover:bg-blue-600 hover:text-white px-4 py-3 rounded-xl transition-all duration-300 border border-blue-100/80"
             >
               <div className="flex items-center gap-2">
                 <Mail size={14} />
-                <span>info@7uptravel.com</span>
+                <span>info@kradfly.com</span>
               </div>
               <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
             </a>

@@ -36,10 +36,10 @@ export default function Footer() {
               <div className="flex items-center gap-3">
                 <Mail size={16} className="text-blue-500 shrink-0" /> 
                 <a 
-                  href="mailto:info@7uptravel.com" 
+                  href="mailto:info@kradfly.com" 
                   className="hover:text-blue-400 cursor-pointer transition-colors"
                 >
-                  info@7uptravel.com
+                  info@kradfly.com
                 </a>
               </div>
             </div>
@@ -164,7 +164,7 @@ export default function Footer() {
 //                 <Phone size={16} /> <Link to="tel:+971-542919259" className="hover:text-blue-500 cursor-pointer transition">+971-542919259</Link>
 //               </div>
 //               <div className="flex items-center gap-3">
-//                 <Mail size={16} /> <Link to="mailto:info@7uptravel.com" className="hover:text-blue-500 cursor-pointer transition">info@7uptravel.com</Link>
+//                 <Mail size={16} /> <Link to="mailto:info@kradfly.com" className="hover:text-blue-500 cursor-pointer transition">info@kradfly.com</Link>
 //               </div>
 //             </div>
 //           </div>
