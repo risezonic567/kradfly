@@ -22,40 +22,40 @@ export default function ContactPage() {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
 
-    try {
-      const response = await fetch("https://www.kradfly.com/api/contactus/send", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(message),
-      });
+  //   try {
+  //     const response = await fetch("https://www.kradfly.com/api/contactus/send", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(message),
+  //     });
 
-      const data = await response.json();
+  //     const data = await response.json();
 
-      if (response.ok) {
-        alert("Message Send Successfully");
-        setMessage({
-          name: "",
-          email: "",
-          phone: "",
-          subject: "",
-          message: "",
-        });
-      } else {
-        alert(data.error || "Failed To send Message");  0
-      }
-    } catch (error) {
-      console.log("Error", error);
-      alert("Server Error");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  //     if (response.ok) {
+  //       alert("Message Send Successfully");
+  //       setMessage({
+  //         name: "",
+  //         email: "",
+  //         phone: "",
+  //         subject: "",
+  //         message: "",
+  //       });
+  //     } else {
+  //       alert(data.error || "Failed To send Message");  0
+  //     }
+  //   } catch (error) {
+  //     console.log("Error", error);
+  //     alert("Server Error");
+  //   } finally {
+  //     setIsSubmitting(false);
+  //   }
+  // };
 
   const offices = {
     dubai: {
@@ -162,7 +162,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <form className="space-y-5" onSubmit={handleSubmit}>
+            <form className="space-y-5" >
               
               {/* Name & Email */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
